@@ -1,5 +1,8 @@
 # My rice configs
+Here I keep my configs for desktops I post on 4chan. Also provide easy to follow documentation about the rice and how to install/use it.
 
+##Desktop collections
+*A bowl of rice, contains many rice grains.* Collection is a set of proper wallpaper, gtk theme, firefox CSS, terminal colors, windows manager theme, etc. Each collection has its own Wiki page with links to idividual rice grains(like a cool bash script or Awesome WM theme) to replicate a perfect rice bowl.
 
 ### Homura in swimsuit
 Mainly purple theme based on powerarrow theme from copycat killer.
@@ -16,3 +19,10 @@ Here you can see light colored terminals in action, color sauce included in them
 Semi dark setup for night
 ![alt tag](https://github.com/UltraNyan/rice/blob/master/Screenshots/2015-04-04-022922_1920x1080_scrot.png)
 Term colors included in README
+
+### Edgy edgelord
+*Coming soon...*
+
+
+## Notable ricegrains
+TODO
