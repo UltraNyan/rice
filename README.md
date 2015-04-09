@@ -29,9 +29,9 @@ TODO
 
 ### Firefox CSS
 #### Tiny CSS by noha-ra light (saito-sensee edit)
-
 TODO
+![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/firefox-light.png)
 
 #### Tiny CSS by noha-ra dark (saito-sensee edit)
-
 TODO
+![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/firefox-dark.png)
