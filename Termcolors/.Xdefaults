@@ -1,0 +1,18 @@
+! Xdefaults file
+! urxvt
+
+urxvt*font: xft:Dejavu\ Sans\ Mono:size=10,xft:Dejavu\ Sans\ Mono\ for\ Powerline:size=9
+
+
+urxvt*termName:         rxvt
+urxvt*scrollBar:        false
+urxvt*perl-lib:         /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:  default,matcher
+urxvt*urlLauncher:      /opt/mozilla/bin/firefox
+urxvt*matcher.button:   1
+
+URxvt.geometry: 90x23
+
+Xft*antialias:		true
+Xft*hinting:		full
+

@@ -1,0 +1,21 @@
+#COLORS NAVY
+urxvt.foreground: 	#E8DFD6
+urxvt.background: 	#272E39
+urxvt.cursorColor:  #2E3340
+urxvt.color0:       #758977
+urxvt.color8:       #065F73
+urxvt.color1:       #C2454E
+urxvt.color9:       #EF5847
+urxvt.color2:       #7CBF9E
+urxvt.color10:      #A2D9B1
+urxvt.color3:       #8A7A63
+urxvt.color11:      #BEB090
+urxvt.color4:       #2E3340
+urxvt.color12:      #61778D
+urxvt.color5:       #FF5879
+urxvt.color13:      #FF99A1
+urxvt.color6:       #44B5B1
+urxvt.color14:      #9ED9D8
+urxvt.color7:       #C9CAA9
+urxvt.color15:      #F6F6C9
+
