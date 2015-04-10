@@ -34,3 +34,7 @@ Useful script that shows all toilet fonts you have installed.
 Script I run in my .bashrc after archey or screenfetch. Show them all that you are master rice.
 ![](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/script_pics/rice.png)
 
+
+### 256color.pl
+A perl script that should output 256 colors of your properly configured terminal.
+![](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/script_pics/256colors.png)
