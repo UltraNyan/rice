@@ -1,0 +1,31 @@
+"resource/layout/overlaydesktop_lores.layout"
+{
+	styles {
+
+		sidemenu {
+			textcolor=Focus
+			font-style=uppercase
+			render_bg {
+				0="fill( x0 - 14, y0, x1 + 14, y1, AL10 )"
+			}
+		}
+
+		sidemenu:hover {
+			textcolor=Focus2
+		}
+	}
+
+	layout {
+
+		region { name=achievements width=max height=73 align=bottom }
+		place { control=AchievementsButton region=achievements align=top-center }
+
+		region { name=links width=max align=top y=90 }
+
+		place { controls="FriendsButton,PlayersButton,GameHubButton,ScreenshotsButton" region=links align=top-center height=60 spacing=28 }
+
+		place { control=BroadcastDetailPanel align=top-center height=50 width=360 }
+
+		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton" height=0 width=0 margin-left=-9999 }
+	}
+}

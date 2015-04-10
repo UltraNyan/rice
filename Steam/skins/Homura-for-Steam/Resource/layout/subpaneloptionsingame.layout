@@ -1,0 +1,30 @@
+"resource/layout/subpaneloptionsingame.layout"
+{
+	layout {
+		place { control=EnableOverlayCheck									width=max margin-top=-4 }
+
+		place { control=PingRateLabel												dir=down width=max start=EnableOverlayCheck y=15 }
+		place { control=PingRateCombo												dir=down width=280 start=PingRateLabel y=5 }
+
+		place { control=ShowIngameFPSLabel									dir=down start=PingRateCombo y=20 }
+		place { control=ShowIngameFPSCombo									dir=down width=280 start=ShowIngameFPSLabel y=5 }
+
+		place { control=ShowIngameFPSContrastCheck					dir=down start=ShowIngameFPSCombo y=20 }
+
+		place { control=HotKeySelectorLabel									dir=down start=ShowIngameFPSContrastCheck y=20 }
+		place { control=HotKeySelector											dir=down width=280 start=HotKeySelectorLabel y=5 }
+
+		place { control=ScreenshotLabel											dir=down start=HotKeySelector y=20 }
+		place { control=ScreenshotHotKeySelector						dir=down width=280 start=ScreenshotLabel y=5 }
+
+		place { control=ScreenshotActionLabel								dir=down start=ScreenshotHotKeySelector y=20 }
+		place {
+			control=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
+			dir=down start=ScreenshotActionLabel y=5
+		}
+
+		place { control=SetScreenshotFolderButton						dir=down width=280 start=ScreenshotSaveUncompressedCheck y=10 }
+
+		place { control=Divider1,DescriptionLabel,TitleLabel,PingRateInfo height=0 width=0 }
+	}
+}

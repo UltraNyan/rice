@@ -1,0 +1,61 @@
+"resource/layout/friendpanel.layout"
+{
+	styles
+	{
+		menuButtonStyle { }
+		menuButtonStyle:hover { }
+
+		WebStatusStyle
+		{ image="graphics/icons/status_web" padding-top=2 padding-left=4 }
+
+		BigPictureStatusStyle
+		{ image="graphics/icons/status_bigpic" padding-top=2 padding-left=4 }
+
+		MobileStatusStyle
+		{ image="graphics/icons/status_mobile" padding-top=2 padding-left=4 }
+
+		WebStatusStyleInGame
+		{ image="graphics/icons/status_web" padding-top=2 padding-left=4 }
+
+		BigPictureStatusStyleInGame
+		{ image="graphics/icons/status_bigpic" padding-top=2 padding-left=4 }
+
+		MobileStatusStyleInGame
+		{ image="graphics/icons/status_mobile" padding-top=2 padding-left=4 }
+	}
+
+	layout
+	{
+		place { control="AvatarOverlayImage"	x=0 y=2 width=46 height=46 }
+		place { control="AvatarImage"			x=7 y=9 width=32 height=32 }
+		place { control="Clanstatusimage"		height=20 }
+
+		place {
+			control=ClanStatusImage,NameLabel,FriendsNameInstanceLabel,BigPictureStatusImage,MobileStatusImage,WebStatusImage
+			x=53 y=7 spacing=4
+		}
+
+		// All 3 controls should have same y position
+		place {
+			control=StatusLabel,GameLabel
+			x=53 y=23 spacing=8 margin-right=10
+		}
+		place {
+			control=AcceptLink,IgnoreLink,BlockLink
+			x=53 y=23 spacing=8
+		}
+		place {
+			control=ControlPanelLink
+			x=53 y=23
+		}
+
+		// this control is shown in the invite-to-game dialog in the overlay
+		place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
+
+		place { control="SuggestedImage,SuggestedLabel" x=53 y=19 spacing=4 }
+		place { control="SuggestedInvite,SuggestedIgnore" x=53 y=31 spacing=8 }
+
+		region { name=hidden height=0 width=0 }
+		place { control="MenuButton" region=hidden }
+	}
+}

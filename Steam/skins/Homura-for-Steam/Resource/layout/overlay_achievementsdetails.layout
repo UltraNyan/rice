@@ -1,0 +1,50 @@
+"resource/layout/overlay_achievementsdetails.layout"
+{
+
+	styles {
+
+		detailsboxtitle {
+			font-family=condensed
+			font-size=40
+			font-style=uppercase
+			textcolor=Focus
+		}
+
+		button {
+			textcolor=none
+			render_bg { }
+		}
+
+		highlight {
+			//achievements earned text
+		}
+
+		progressbackground {
+			bgcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y1, none )"
+			}
+		}
+
+		progressbarimage {
+			bgcolor=none
+			render {
+				0="fill( x0, y0, x1 + 8, y1, focus )"
+			}
+		}
+	}
+
+	layout
+	{
+		place { control=TitleText align=top-center }
+
+		place { control=*achievement y=51 width=0 height=0 align=top-center }
+
+		place { control=progressbackground width=max height=12 align=bottom }
+		place { control=progressbarimage height=12 align=bottom }
+
+		place { controls=ViewAchievementsButton height=max width=max }
+
+		place { controls=ProgressTextEarned height=0 width=0 }
+	}
+}

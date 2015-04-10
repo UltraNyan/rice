@@ -1,0 +1,98 @@
+"resource/layout/steamrootdialog_gamespage_details.layout"
+{
+	styles {
+
+		CGamesPage_Details {
+			bgcolor=none
+			render { }
+			render_bg { }
+		}
+
+		"CGamesPage_Details ListPanelInterior" {
+			minimum-width="262"
+		}
+
+		CGamesListPanel {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.Background )"
+			}
+		}
+
+		DetailsBorderPanel {
+			render_bg {
+				0="fill( x0, y0, x1, y1 - 1, Details.Background )"
+			}
+		}
+
+		headerimage {
+			bgcolor=none
+		}
+	}
+
+	layout
+	{
+		region	{ name="list"					y=0 x=0 width=275 height=max }
+		region	{ name="details"			y=0 x=275 width=max height=max overflow=scroll-vertical }
+		region	{ name="headertext"		y=40 region=details width=max height=max }
+		region	{ name="detailsbody"	y=499 region=details width=max overflow=allow-vertical }
+
+		region	{ name="links_bg"		y=360 region=details width=max height=139 overflow=allow-vertical }
+		region	{ name="links_l"		y=360 region=details width=215 height=139 align=left overflow=allow-vertical }
+		region	{ name="links_c"		y=360 region=details width=160 height=139 align=top-center overflow=allow-vertical }
+		region	{ name="links_r"		y=360 region=details width=215 height=139 align=right overflow=allow-vertical }
+
+		place		{ control=DetailsBorder width=max height=max }
+		place		{ control=GamesList region=list width=275 height=max margin-top=-1 }
+
+		place		{ control=headerimagea width=1024 height=550 margin-left=120 y=0 align=top-center }
+		place		{ control=headerimageb width=1024 height=550 margin-left=120 y=0 align=top-center }
+		place		{ control=emptylisttext x=275 y=0 width=max height=max margin=16 }
+
+		place		{ control=gametitleheader region=headertext align=top-center }
+		place		{ control=gamesubheader region=headertext start=gametitleheader y=30 dir=down align=top-center }
+
+		place
+		{
+			control=welcomedetails,turnnotifications,nonsteamdetails,achievementsdetails,friendsdetails,dlcdetails,clouddetails,newsdetails,screenshotsdetails
+			region=detailsbody
+			dir=down
+			width=max
+		}
+
+		place { control=tagslabel region=links_bg height=139 width=max }
+		place { control=communityfilesdetails region=headertext align=top width=max y=240 margin-right=40 height=64 }
+
+		place
+		{
+			control=gamehublink,forumlink,ogglink,guideslink,recommendlink
+			region=links_l
+			dir=down
+			align=left
+			y=16
+			x=20
+			spacing=6
+		}
+
+		place
+		{
+			control=storelink,sendguestpasslink,manuallink,dlclink,cdkeylink,supportlink
+			region=links_c
+			dir=down
+			align=left
+			y=16
+			spacing=6
+		}
+
+		place
+		{
+			control=*taglink,edittagslink
+			region=links_r
+			dir=down
+			align=left
+			y=16
+			spacing=6
+		}
+
+		place { control=linkslabel,guidelink,newslink,achievementslink width=0 height=0 }
+	}
+}

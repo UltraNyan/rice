@@ -1,0 +1,31 @@
+"resource/layout/overlay_communityhubpanel.layout"
+{
+	styles
+	{
+		detailsbox {
+			bgcolor=AL10
+		}
+		
+		button
+		{
+			padding-right=4
+			font-family=condensed
+			font-size=30
+			font-style=uppercase
+			textcolor=Focus
+			render_bg { }
+		}
+
+		button:hover
+		{
+			textcolor=focus2
+		}
+	}
+	
+	layout
+	{
+		place { control=ViewCommunityHub height=60 align=top-center }
+
+		place { control="TitleText,NumContributionsText" height=0 width=0 }
+	}
+}

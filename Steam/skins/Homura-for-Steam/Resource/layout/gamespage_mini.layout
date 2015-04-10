@@ -1,0 +1,59 @@
+"resource/layout/gamespage_mini.layout"
+{
+	styles
+	{
+		"CGamesPage_Mini ListPanelInterior" {
+			minimum-width="9999"
+		}
+
+		RichText { //for emptylist
+			textcolor=none
+			selectedtextcolor=none
+			selectedbgcolor=none
+		}
+
+		ListPanelInterior:scrollbar {
+			render_bg { }
+		}
+
+		DetailsBorderPanel {
+			render_bg {
+				0="fill( x1 - 13, y0 + 1, x1, y1, Scroll.Gutter )"
+			}
+		}
+
+		CMiniGameFilterMenuButton {
+			//image="graphics/icons/filter"
+			render {
+				0="fill( x1 - 16, y0, x1 - 6, y1, focus )"
+			}
+		}
+
+		CMiniGameFilterMenuButton:hover {
+			//image="graphics/icons/filter_hover"
+		}
+
+		LibrarySearch:empty {
+			textcolor=none
+			padding-top=3
+			image="graphics/icons/search"
+		}
+	}
+
+		layout
+		{
+		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
+		place { control=frame_captiongrip margin=2 width=max height=50 }
+		place [!$OSX] { control=MenuBar align=top y=10 x=20 width=30 height=30 }
+
+		region { name=nav height=36 width=max y=10 x=55 }
+		region { name="body" y=49 height=max width=max }
+
+		place { control="gameslist" region=body width=max height=max }
+
+		place { control="library_search" region=nav start=library_filters y=0 x=0 height=22 width=92 }
+		place { control="library_filters" region=nav align=left height=22 y=3 x=8 }
+
+		place { control="label_search_icon,subnavgroup_library" height=0 width=0 }
+		}
+}

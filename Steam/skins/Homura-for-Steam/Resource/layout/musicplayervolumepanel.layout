@@ -1,0 +1,17 @@
+"resource/layout/musicplayervolumepanel.layout"
+{
+	styles {
+
+		CMusicPlayerVolumePanel {
+			minimum-width = 130
+			minimum-height = 24
+		}
+
+		VolumeSlider { render_bg { } }
+	}
+
+	layout
+	{
+		place { control="VolumeSlider" y=2 height=18 width=max align=top-center margin-right=10 margin-left=10 }
+	}
+}

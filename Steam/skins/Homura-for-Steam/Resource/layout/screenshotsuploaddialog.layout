@@ -1,0 +1,38 @@
+"resource/layout/screenshotsuploaddialog.layout"
+{
+	styles
+	{
+		CScreenshotUploadDialog {
+			minimum-width=325	
+			minimum-height=250
+		}
+
+		visibility_options {
+			minimum-width=100
+		}
+		
+		SlimProgressBar { }
+		SlimProgressBarError { textcolor=Highlight3 }
+	}
+	
+	layout
+	{
+		place { control="upload_question" x=25 y=30 }
+		place { control="upload_info" x=25 y=35 width=max  }
+		place { control="error_info" x=25 y=35 width=max }
+		place { control="upload_progress" y=55 width=max margin-left=25 margin-right=25 height=2 }
+		
+		place { control="upload_size" x=25 y=55 }
+		place { control="storage_remaining" x=25 y=70 }
+		place { control="upload_size_info" x=145 y=55 }
+		place { control="storage_remaining_info" x=145 y=70 }
+		place { control="visiblity_label" x=26 y=100 }
+		place { control="visibility_options" start="visiblity_label" y=-3 x=8 dir=right }
+		place { control="share_to_facebook_check_button" x=23 y=130 }
+		place { control="facebook_logo" start="share_to_facebook_check_button" x=0 y=7 }
+		place { control="shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label" x=22 y=160 margin-left=4 width=275 }
+		
+		region { name="bottom" align=bottom height=37 }
+		place { control="cancel_button,upload_button" region=bottom align=right margin-right=9 spacing=10 width=92 height=25 }
+	}
+}

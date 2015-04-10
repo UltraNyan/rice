@@ -1,0 +1,61 @@
+"resource/layout/htmlfindbar.layout"
+{
+	styles
+	{
+		FindEntry {
+			render_bg {
+				0="fill( x0, y0, x1 + 50, y1, A2.Button )"
+			}
+		}
+		
+		CloseButtonSm {
+			render_bg { }
+			image=graphics/icons/close
+		}
+		
+		CloseButtonSm:hover {
+			image=graphics/icons/close_hover
+		}
+		
+		NextButtonSm {
+			textcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.Button )"
+				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_down )"
+			}
+		}
+		
+		NextButtonSm:hover {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonHover )"
+				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_down_hover )"
+			}
+		}
+		
+		PrevButtonSm {
+			textcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.Button )"
+				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_up )"
+			}
+		}
+		
+		PrevButtonSm:hover {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonHover )"
+				1="image( x0 + 2, y0 + 6, x1, y1, graphics/buttons/caret_up_hover )"
+			}
+		}
+	}
+		
+	layout
+	{
+		region { name=body x=7 y=7 width=max height=max }
+		
+		place { control="FindEntry" region=body width=max align=left margin-right=58 end-right=Next }
+		place { control="FindCount" region=body align=right end-right=Next margin-right=16 margin-top=4 }
+		place { control="Next,Previous" region=body align=right height=24 width=16 spacing=8 margin-right=35 }
+		place { control="Close" region=body align=right height=24 width=24 margin-right=8 }
+		place { control="SearchThisPage" height=0 width=0 }
+	}
+}

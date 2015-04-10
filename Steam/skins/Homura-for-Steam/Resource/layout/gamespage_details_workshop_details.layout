@@ -1,0 +1,32 @@
+"resource/layout/gamespage_details_workshop_details.layout"
+{
+	colors
+	{
+		WorkshopDetailsPanel.ExtraVerticalSpacing "100"
+		WorkshopDetailsPanel.ExtraHorizontalSpacing "0"
+		RichText.InsetX "2"
+		RichText.InsetY "2"
+	}
+
+	styles {
+
+		CWorkshopDetailsPanel {
+			render_bg {
+				//0="fill( x0, y0, x1, y0 + 1, A2.Divider )"
+				//1="fill( x0, y0 + 1, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		workshop_banner {
+			//left-margin pushes default banner out of view
+		}
+	}
+
+	layout {
+
+		region { name=body width=max height=max }
+
+		place { region=body control=workshop_description width=0 height=0 }
+		place { region=body control=workshop_banner width=358 margin-left=9999 height=102 align=top-center }
+	}
+}

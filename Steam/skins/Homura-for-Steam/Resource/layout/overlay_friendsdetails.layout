@@ -1,0 +1,31 @@
+"resource/layout/overlay_friendsdetails.layout"
+{
+	styles
+	{
+		detailsbox {
+			bgcolor=AL10
+		}
+		
+		button
+		{
+			padding-right=4
+			font-family=condensed
+			font-size=30
+			font-style=uppercase
+			textcolor=Focus
+			render_bg { }
+		}
+
+		button:hover
+		{
+			textcolor=focus2
+		}
+	}
+	
+	layout
+	{
+		place { control=AllFriendsButton,ViewPlayersButton spacing=12 height=60 margin-left=32 align=top-center }
+
+		place { control="TitleText,TextThisManyFriends,grid" height=0 width=0 }
+	}
+}

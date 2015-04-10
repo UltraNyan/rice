@@ -1,0 +1,33 @@
+"resource/layout/subpaneloptionsdownloads.layout"
+{
+	layout
+	{
+		region { name="box" width=440 height=max y=0 x=0 }
+
+		place { controls="LibrariesLabel"							region=box dir=down }
+		place { controls="ManageInstalledApps"						region=box dir=down width=280 height=24 start=LibrariesLabel margin-top=10 }
+		place { controls="ManageInstalledappsLabel"					region=box dir=down width=max start=ManageInstalledApps margin-top=10 }
+
+		place { control="Divider1"									region=box dir=down width=max start=ManageInstalledappsLabel margin-top=18 }
+
+		place { controls="RegionLabel"								region=box dir=down start=Divider1 margin-top=15 }
+		place { controls="DownloadRegionCombo"						region=box dir=down width=280 height=24 start=RegionLabel dir=down margin-top=10 }
+		place { controls="RegionInfoLabel"							region=box dir=down width=max start=DownloadRegionCombo margin-top=10 }
+
+		place { control="Divider2"									region=box dir=down width=max start=RegionInfoLabel margin-top=18 }
+
+		place { controls="RestrictionsLabel"						region=box dir=down start=Divider2 margin-top=15 }
+		place { controls="ThrottleRates"							region=box dir=down width=280 height=24 start=RestrictionsLabel margin-top=10 }
+
+		place { controls="AllowDownloadsDuringGameplayCheckbox"		region=box dir=down start=ThrottleRates margin-top=20 }
+		place { controls="AutoUpdateTimeRestrictCheckbox"			region=box dir=down start=AllowDownloadsDuringGameplayCheckbox margin-top=-2 }
+
+		place { controls="AutoUpdateTimeRestrictStartLabel"			region=box dir=down start=AutoUpdateTimeRestrictCheckbox margin-top=10 }
+		place { controls="AutoUpdateTimeRestrictStart"				region=box dir=down width=135 height=24 start=AutoUpdateTimeRestrictStartLabel margin-top=5 }
+
+		place { controls="AutoUpdateTimeRestrictEndLabel"			region=box dir=down start=AutoUpdateTimeRestrictCheckbox margin-top=10 x=145 }
+		place { controls="AutoUpdateTimeRestrictEnd"				region=box dir=down width=135 height=24 start=AutoUpdateTimeRestrictEndLabel margin-top=5 }
+
+		place { control="ThrottleRatesLabel,AllowDownloadsDuringGameplayInfo" height=0 width=0 }
+	}
+}

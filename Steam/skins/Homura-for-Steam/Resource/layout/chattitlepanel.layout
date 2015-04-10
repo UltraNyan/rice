@@ -1,0 +1,46 @@
+"resource/layout/chattitlepanel.layout"
+{
+	controls
+	{
+		"AvatarImage" { ControlName="ImagePanel" }
+		"NameLabel" { ControlName="Label" }
+		"StatusLabel" { ControlName="Label" style="statuslabel" }
+		"LockImage" { ControlName="ImagePanel" }
+		"MenuButton" { ControlName= "CChatTitlePanelAffordance" style="menuButtonStyle"}
+	}
+	
+	styles
+	{
+		MenuButton {
+			minimum-height=30
+			minimum-width=30
+			render {
+				0="fill( x0, y0, x1, y1, A2.Ribbon )"
+				1="image( x0 + 11, y0 + 9, x1, y1, graphics/buttons/caret_down )"
+			}
+		}
+
+		MenuButton:hover { 
+			render {
+				0="fill( x0, y0, x1, y1, A2.Ribbon )"
+				1="image( x0 + 11, y0 + 9, x1, y1, graphics/buttons/caret_down_hover )"
+			}
+		}
+		
+		MenuButton:selected { 
+			render {
+				0="fill( x0, y0, x1, y1, A2.Ribbon )"
+				1="image( x0 + 11, y0 + 9, x1, y1, graphics/buttons/caret_down_hover )"
+			}
+		}
+		
+		statuslabel { }
+	}
+	
+	layout
+	{
+		place { control="MenuButton" height=30 width=30 align=right }
+		
+		place {	control="LockImage,NameLabel,AvatarImage,StatusLabel" height=0 width=0 }
+	}
+}

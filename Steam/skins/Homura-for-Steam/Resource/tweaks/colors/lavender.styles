@@ -1,0 +1,8 @@
+"" {
+
+	colors {
+		Focus="92 107 192 255"		//material 400
+		Focus2="121 134 203 255"	//material 300
+		Focus3="121 134 203 150"	//material 300
+	}
+}

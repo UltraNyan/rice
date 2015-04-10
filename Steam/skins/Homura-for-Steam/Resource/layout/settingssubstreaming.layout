@@ -1,0 +1,46 @@
+"resource/layout/settingssubstreaming.layout"
+{
+	styles
+	{
+		ListPanelColumnHeader {
+			padding-left=3
+		}
+
+		ListPanelSectionHeader {
+			padding-left=8
+		}
+	}
+
+	layout
+	{
+		region { name=box width=max height=max }
+		
+		place { control="AdvancedHostOptions,AdvancedClientOptions" height=24 }
+		
+		place { control=DescriptionLabel		region=box dir=down width=max }
+		place { control=RemoteClientList		start=DescriptionLabel region=box dir=down width=max margin-top=10 margin-left=0 }
+		place { control=EnableStreaming			start=RemoteClientList region=box dir=down width=max margin-top=10 }
+
+		place { control=HostDivider				start=EnableStreaming region=box dir=down width=max margin-top=15 }
+		place {	control=HostLabel				start=HostDivider region=box dir=down width=max margin-top=15 }
+		place { control=AdvancedHostOptions		start=HostLabel region=box dir=down width=280 margin-top=10 }
+		
+		place { control=ClientDivider			start=AdvancedHostOptions region=box dir=down width=max margin-top=21 }
+		place { control=ClientLabel				start=ClientDivider region=box dir=down width=max margin-top=16 }
+
+		place { control=QualityFast				start=ClientLabel region=box dir=down margin-top=10 }
+		
+		place
+		{
+			control="QualityBalanced,QualityBeautiful"
+			start=QualityFast
+			region=box
+			dir=right
+			spacing=10
+		}
+
+		place { control=AdvancedClientOptions	start=QualityFast region=box dir=down width=280 margin-top=10 }
+
+		place { control=SupportInformationLabel start=AdvancedClientOptions region=box dir=down margin-top=10 }		
+	}
+}

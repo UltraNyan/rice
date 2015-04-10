@@ -1,0 +1,234 @@
+"" {
+
+	include "config.ini"
+
+	colors {
+
+		Air0 "0 0 0 255" Air5 "5 5 5 255" Air10 "10 10 10 255" Air15 "15 15 15 255" Air20 "20 20 20 255" Air25 "25 25 25 255" Air30 "30 30 30 255" Air35 "35 35 35 255" Air40 "40 40 40 255" Air45 "45 45 45 255" Air50 "50 50 50 255" Air55 "55 55 55 255" Air60 "60 60 60 255" Air65 "65 65 65 255" Air70 "70 70 70 255" Air75 "75 75 75 255" Air80 "80 80 80 255" Air85 "85 85 85 255" Air90 "90 90 90 255" Air95 "95 95 95 255" Air100 "100 100 100 255" Air105 "105 105 105 255" Air110 "110 110 110 255" Air115 "115 115 115 255" Air120 "120 120 120 255" Air125 "125 125 125 255" Air130 "130 130 130 255" Air135 "135 135 135 255" Air140 "140 140 140 255" Air145 "145 145 145 255" Air150 "150 150 150 255" Air155 "155 155 155 255" Air160 "160 160 160 255" Air165 "165 165 165 255" Air170 "170 170 170 255" Air175 "175 175 175 255" Air180 "180 180 180 255" Air185 "185 185 185 255" Air190 "190 190 190 255" Air195 "195 195 195 255" Air200 "200 200 200 255" Air205 "205 205 205 255" Air210 "210 210 210 255" Air215 "215 215 215 255" Air220 "220 220 220 255" Air225 "225 225 225 255" Air230 "230 230 230 255" Air235 "235 235 235 255" Air240 "240 240 240 255" Air245 "245 245 245 255" Air250 "250 250 250 255" Air255 "255 255 255 255"
+		AL5 "255 255 255 5" AL10 "255 255 255 10" AL15 "255 255 255 15" AL20 "255 255 255 20" AL25 "255 255 255 25" AL30 "255 255 255 30" AL35 "255 255 255 35" AL40 "255 255 255 40" AL45 "255 255 255 45" AL50 "255 255 255 50" AL55 "255 255 255 55" AL60 "255 255 255 60" AL65 "255 255 255 65" AL70 "255 255 255 70" AL75 "255 255 255 75" AL80 "255 255 255 80" AL85 "255 255 255 85" AL90 "255 255 255 90" AL95 "255 255 255 95" AL100 "255 255 255 100" AL105 "255 255 255 105" AL110 "255 255 255 110" AL115 "255 255 255 115" AL120 "255 255 255 120" AL125 "255 255 255 125" AL130 "255 255 255 130" AL135 "255 255 255 135" AL140 "255 255 255 140" AL145 "255 255 255 145" AL150 "255 255 255 150" AL155 "255 255 255 155" AL160 "255 255 255 160" AL165 "255 255 255 165" AL170 "255 255 255 170" AL175 "255 255 255 175" AL180 "255 255 255 180" AL185 "255 255 255 185" AL190 "255 255 255 190" AL195 "255 255 255 195" AL200 "255 255 255 200" AL205 "255 255 255 205" AL210 "255 255 255 210" AL215 "255 255 255 215" AL220 "255 255 255 220" AL225 "255 255 255 225" AL230 "255 255 255 230" AL235 "255 255 255 235" AL240 "255 255 255 240" AL245 "255 255 255 245" AL250 "255 255 255 250"
+		AD5 "0 0 0 5" AD10 "0 0 0 10" AD15 "0 0 0 15" AD20 "0 0 0 20" AD25 "0 0 0 25" AD30 "0 0 0 30" AD35 "0 0 0 35" AD40 "0 0 0 40" AD45 "0 0 0 45" AD50 "0 0 0 50" AD55 "0 0 0 55" AD60 "0 0 0 60" AD65 "0 0 0 65" AD70 "0 0 0 70" AD75 "0 0 0 75" AD80 "0 0 0 80" AD85 "0 0 0 85" AD90 "0 0 0 90" AD95 "0 0 0 95" AD100 "0 0 0 100" AD105 "0 0 0 105" AD110 "0 0 0 110" AD115 "0 0 0 115" AD120 "0 0 0 120" AD125 "0 0 0 125" AD130 "0 0 0 130" AD135 "0 0 0 135" AD140 "0 0 0 140" AD145 "0 0 0 145" AD150 "0 0 0 150" AD155 "0 0 0 155" AD160 "0 0 0 160" AD165 "0 0 0 165" AD170 "0 0 0 170" AD175 "0 0 0 175" AD180 "0 0 0 180" AD185 "0 0 0 185" AD190 "0 0 0 190" AD195 "0 0 0 195" AD200 "0 0 0 200" AD205 "0 0 0 205" AD210 "0 0 0 210" AD215 "0 0 0 215" AD220 "0 0 0 220" AD225 "0 0 0 225" AD230 "0 0 0 230" AD235 "0 0 0 235" AD240 "0 0 0 240" AD245 "0 0 0 245" AD250 "0 0 0 250"
+
+
+		A2.Background				"Air235"
+		A2.Menu							"Air235"
+		A2.MenuDivider			"Air215"
+		A2.Ribbon						"Air205"
+		A2.Divider					"Air190"
+		A2.StatusPanel			"50 50 50 175"
+		A2.Bar							"Air110"
+
+		A2.Button						"Air220"
+		A2.ButtonHover			"Air225"
+		A2.ButtonActive			"Air210"
+		A2.ButtonDisabled		"Air230"
+		A2.ButtonShadow			"AD25"
+
+		Scroll.Std					"Air180"
+		Scroll.Hover				"Air155"
+		Scroll.Gutter				"A2.Ribbon"
+
+		Text			"Air115"		TextHover			"Air90"			TextActive			"Air65"			//Normal Text
+		Label			"Air145"		LabelHover		"Air120"		LabelActive			"Air95"			//Light "blend in" text on AirBackground
+		Light			"Air175"		LightHover		"Air150"		LightActive			"Air125"		//Light text for uninstalled games, disabled items
+		Dark			"Air85"			DarkHover			"Air60"			DarkActive			"Air35"			//Dark highlight text
+		Black			"Air0"			BlackHover		"Air25"			BlackActive			"Air50"			//Black text
+		White			"Air255"		WhiteHover		"Air230"		WhiteActive			"Air205"		//White text, selectedtext (with focus as bg)
+
+		Friends.Online			"103 161 184 255"
+		Friends.InGame			"117 165 112 255"
+		Friends.Offline			"Light"
+
+		Chat.Friend					"Text"
+		Chat.Self						"Label"
+		Chat.History				"Light"
+
+		Details.FocusText			"Focus"
+		Details.Background		"184 184 184 150"
+
+		Overlay.Background	"50 50 50 150"
+
+
+		almostBlack="23 22 20 255"
+		grey="158 153 149 255"
+		none="0 0 0 0"
+		yellow="255 255 0 255"
+		offwhite="166 164 159 255"
+		dullgreen="216 222 211 255"
+		maize="203 191 87 255"
+		red="255 51 51 255"
+		darkblue="0 85 128 255"
+		blue="0 133 199 255"
+		darkred="128 0 0 255"
+		darkpurple="64 0 64 255"
+
+		// control colors
+		bordercolor="133 130 113 255"
+		darkcorner="77 73 71 255"
+		buttontext=Text
+		buttontextactive=Text
+
+		// new control colors
+		ButtonFace="105 102 99 200"
+		ButtonFace2="92 89 86 255" // for use in main client list panel column header, some button states
+		ButtonFace3="95 92 90 255" // button cornering pixels
+		ButtonFaceDisabled="none"
+		ButtonFaceHover="105 102 99  240"   /// hover!
+		ButtonFaceActive="105 102 99  240"  // not sure what this state is...
+		ButtonFaceFocus="105 102 99  240"  //  keyboard focus
+		ButtonFaceActiveFocus="105 102 99  255"  // this is the default choice
+
+		ButtonBorder="112 109 105 255"
+		ButtonBorderPage="128 124 120 255"
+		ButtonBorderDisabled="77 75 72 255"
+		ButtonBorderDisabled2="67 65 63 255"  //cornering pixels
+		ButtonBorderActive="140 135 129 255"
+		ButtonBorderFocus="153 147 141 255"
+
+		Text="Text"
+		Text2="Text"
+		TextHover="TextHover"
+		TextSelected="TextActive"
+		TextentrySelected="White" // color of any selected text
+		TextDisabled="Light"
+		TextSelectedBG="Focus2" // background color of any selected text
+
+		Label="Label"
+		Label2="Label"
+		LabelDisabled="Light"
+		LabelFocus="LabelHover"
+
+		NavLabel="158 153 149 255"
+
+		TextGlowHover="128 124 120 255"
+		TextGlowSelected="171 169 166 255"
+		TextGlowHoverSm="128 123 120 255"
+		TextGlowSelectedSm="145 142 140 255"
+
+		ScrollGlyph="204 198 192 255"  // the color of the scroll bar arrows
+		ScrollGlyphDisabled="77 74 72 255"
+		ScrollGlyphFocus="242 242 242 255"
+
+		ScrollBG="77 74 72 255" // the color of the scroll bar gutter
+
+		HeaderClient="57 53 49 255" // the color of the List box header in the main client window
+		HeaderDialog="95 92 90 255" // the color of the list box header in other windows
+
+		TitleBar="86 81 78 50"
+		TitleBarFocus="176 169 162 50"
+
+		//Focus="see options.ini"  		// background color of any selected menu or list item
+		//Focus2="see options.ini"		// background color of view buttons and anything else in focus that needs more 'punch'
+		//Focus3="62 92 133 255"		// background color of highlighted friends
+		FocusGrid="85 146 160 240"  	// background color of any grid item
+		Highlight="focus" 	// same as focus
+		Highlight1="focus2"    // installing hover color
+		Highlight2="focus2" 	// installing color
+		Highlight3="173 69 71 255"    	// red for errors, blocked, etc.
+		Highlight5="77 109 140 255" 	// blue
+		Highlight5a="83 124 166 255" 	// lighter version of highlight5
+		Highlight5b="59 85 98 255" 	// as highlight5 but darker, for non-focused window borders
+
+		BackgroundStartSubtle="20 20 20 155"
+		BackgroundStartSubtle="31 31 31 45" [$OSX]
+		BackgroundStart="none"
+		BackgroundStartOpaque="36 35 34 255"
+
+		ClientBG="0 0 0 255"
+		DialogBG="56 54 53 255"
+
+		DarkClientBG="36 35 34 255"
+		DarkDialogBG="56 54 53 255"
+		DarkClientBGTransparent="36 35 34 19"
+		DarkDialogBGTransparent="none"
+
+		GameDetailsBlueTransparent="89 134 179 160"
+		GameDetailsGreenTransparent="126 166 75 160"
+		GameDetailsRedTransparent="173 69 71 160"
+
+		GameDetailsBlue="Details.FocusText"
+		GameDetailsGreen="Details.FocusText"
+		GameDetailsRed="Details.FocusText"
+
+		PropertySheetBG="74 72 70 255"
+		InteriorColor="64 62 60 255"
+
+		DialogBorder="119 117 115 255" // border color around any dialog
+
+		FillBG1="64 62 60 255" //gradient colors
+		FillBG2="71 69 67 255"
+
+		MenuBG1="92 89 86 255" //gradient colors
+		MenuBG2="61 59 58 255"
+
+		Divider="107 104 101 255"
+		DarkImageBorder="47 48 43 255"
+		DarkImageOverlay="0 0 0 80"
+
+		// colors pulled from steamscheme.res
+		"ClayBG"      "70 70 70 255"
+		"ClayButtonBG"      "87 88 88 255"
+		"ClayEnabled"     "85 88 82 255"
+		"ClayKeyFocus"      "89 92 77 255"
+		"ClayMouseDown"     "85 85 85 255"
+		"ClayDisabledText"    "128 134 126 255"
+		"ClayLightGreen"    "173 181 168 255" // frame button (close X) etc
+		"ClayDimLightGreen"   "166 172 162 255" // frame button and title without focus etc
+		"LightClayBG"     "104 106 101 255" // property sheet interior, active tab
+		"LightClayButtonBG"   "125 128 120 255" // buttons on property sheet interior, active tab
+		"DarkClayBG"      "47 49 45 255"    // shadow
+		"p_ClayMouseDown"   "94 94 94 255"
+		"ClaySheetBottom"   "92 90 87 255"
+		"MaizeBG"     "145 134 60 255"  // background color of any selected text or menu item
+		"GreenBG"     "76 88 68 255"
+		"LightGreenBG"      "90 106 80 255"   // darker background color
+		"DarkGreenBG"     "62 70 55 255"    // background color of text edit panes (chat, text Entries, etc.)
+		"LightGrayBG"     "121 126 121 255"
+		"GrayBG"      "77 73 71 255"
+		"GrayBG2"     "39 37 35 255"
+		"TempGradientTop" "53 52 51 255"
+
+		html.secureurl 		"White"
+		html.insecureurl 	"White"
+
+		DragDrop.DragFrame        "255 255 255 192"
+		DragDrop.DropFrame        "150 255 150 255"
+
+		ListPanel.TextColor       Text
+		ListPanel.BgColor       none
+		ListPanel.SelectedTextColor     TextentrySelected
+		ListPanel.SelectedBgColor     TextSelectedBG
+		ListPanel.SelectedOutOfFocusBgColor   ClientBG
+		ListPanel.DisabledTextColor     TextDisabled
+		ListPanel.DisabledSelectedTextColor   ClientBG
+		ListPanel.EmptyListInfoTextColor    Label
+
+		TextEntry.IMEBGColor        "Air230"
+		TextEntry.IMEFGColor        "Light"
+
+		WizardPanel.HeaderBGColor     "HeaderDialog"
+
+		PropertySheet.FlashTabColor		"Focus2"
+
+		// Friends List colors
+		Friends.InGameColor       "Friends.InGame"
+		Friends.OnlineColor       "Friends.Online"
+		Friends.OfflineColor      "Friends.Offline"
+		Friends.PanelDefault      "Label"
+		Friends.PanelOver      		"Text"
+		Friends.PanelSelected     "ClientBG"
+		Friends.SectionHeader     "Label"
+		Friends.NoAvatarOver      "Text"
+		Friends.IgnoredColor      "Friends.Offline"
+
+		ChatDialog.URLColor       "Chat.Friend"
+		ChatOwnTextColor        	"Chat.Self"
+		ChatDialog.HistoryColor		"Chat.History"
+		ChatGradientTop         	"39 39 39 255"
+		ChatGradientBottom        "102 104 99 255"
+
+		AchievementPopup.TitleColor   "Text"
+		AchievementPopup.DescriptionColor "180 180 180 255"
+
+		GiftOnlyInfo.ImagePanelColor  "GrayBG"
+	}
+}

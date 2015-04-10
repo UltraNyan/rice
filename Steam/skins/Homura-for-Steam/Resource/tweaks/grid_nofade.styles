@@ -1,0 +1,9 @@
+"resource/options/grid_nofade.styles"
+{
+	styles
+	{
+		GameItem_unInstalled {
+			alpha		255
+		}
+	}
+}

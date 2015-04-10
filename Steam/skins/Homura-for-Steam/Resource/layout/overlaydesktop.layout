@@ -1,0 +1,24 @@
+"resource/layout/overlaydesktop.layout"
+{
+	styles
+	{
+	}
+
+	layout
+	{
+		region { name=achievements width=max height=73 align=bottom }
+		place { control=AchievementsDetailPanel region=achievements width=max height=max }
+
+		region { name=links width=max align=top y=90 }
+
+		place { control=FriendsDetailPanel 				width=401 } //350
+		place { control=CommunityHubDetailPanel 	width=241 } //223
+		place { control=ScreenshotsDetailPanel 		width=243 } //200
+		place { control=FriendsDetailPanel,CommunityHubDetailPanel,ScreenshotsDetailPanel region=links align=top-center height=60 }
+
+		place { control=BroadcastDetailPanel align=top-center height=50 width=360 }
+
+		region { name=hidden height=0 width=0 margin-left=-9999 }
+		place { controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,GuidesButton,GuidesDetailPanel,NewsDetailPanel,CommunityDiscussionsDetailPanel" region=hidden }
+	}
+}

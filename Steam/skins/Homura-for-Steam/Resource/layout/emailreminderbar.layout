@@ -1,0 +1,33 @@
+"resource/layout/emailreminderbar.layout"
+{
+	styles
+	{
+		CEmailReminderBar {
+			render { }
+			render_bg {
+				0="fill (x0, y0, x1, y1, A2.Bar )"
+			}
+		}
+
+		CloseStyle {
+			textcolor=none
+			render_bg {
+				0="image( x0 + 3, y0 + 3, x1, y1, graphics/buttons/tiny_x )"
+			}
+		}
+
+		CloseStyle:hover {
+			render_bg {
+				1="image( x0 + 3, y0 + 3, x1, y1, graphics/buttons/tiny_x_hover )"
+			}
+		}
+	}
+
+	layout
+	{
+		place { control="emailreminderbarlabel,emailreminderbaremail_email,emailreminderbar_yesbutton,emailreminderbar_nobutton" y=9 x=26 margin-right=27 align=top-center spacing=10 }
+		place { control="emailreminderbar_info,emailreminderbar_infolink" y=29 x=26 margin-right=27 spacing=10 align=top-center }
+
+		place { control="emailreminderbar_close" y=6 align=right width=15 height=15 margin-right=6 }
+	}
+}

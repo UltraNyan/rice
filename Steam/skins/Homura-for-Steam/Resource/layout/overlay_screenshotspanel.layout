@@ -1,0 +1,31 @@
+"resource/layout/overlay_screenshotspanel.layout"
+{
+	styles
+	{
+		detailsbox {
+			bgcolor=AL10
+		}
+		
+		button
+		{
+			padding-right=4
+			font-family=condensed
+			font-size=30
+			font-style=uppercase
+			textcolor=Focus
+			render_bg { }
+		}
+
+		button:hover
+		{
+			textcolor=focus2
+		}
+	}
+	
+	layout
+	{
+		place { control=ViewScreenshots height=60 align=top-center margin-right=25 }
+
+		place { control="TitleText,InstructionText,DarkRegion,SS0,SS1,SS2,SetShortcut" height=0 width=0 }
+	}
+}

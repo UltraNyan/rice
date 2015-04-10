@@ -1,0 +1,35 @@
+"resource/layout/settingsdialog.layout"
+{
+	styles
+	{
+		CDialogSettings {
+			minimum-width="645"
+			minimum-height="585"
+			render_bg {
+				0="fill( x0, y0, x0 + 165, y1, A2.Ribbon )"
+			}
+		}
+
+		SettingsList {
+			selectedbgcolor=A2.Background
+			font-family=condensed
+			font-size=20	
+			padding-left=20
+		}
+		
+		PropertySheet { }
+	}
+	
+	layout
+	{
+		region { name="buttons" width=max height=36 align="bottom" }
+		region { name="body" margin-right=20 margin-bottom=46 margin-top=32 }		
+
+		place { control="settingslist" end=sheet region=body width=165 height=max }
+		place { control="sheet" start=settingslist region=body width=440 height=max y=14 x=20 }
+		place { control="okbutton,cancelbutton" region="buttons"
+		        width=92 height=25 align=right
+						margin-right=10 margin-top=0
+						margin-bottom=2 spacing=10 }
+	}
+}

@@ -1,0 +1,12 @@
+"resource/layout/overlay_broadcastpanel.layout"
+{
+	styles {
+		highlight { textcolor=white }
+	}
+
+	layout {
+		place { control="ShowBroadcast,ShowChat,ShowSettings,StopBroadcast" spacing=10 align=top-center margin-top=10 }
+
+		place { control="TitleText,InstructionText" height=0 width=0 }
+	}
+}

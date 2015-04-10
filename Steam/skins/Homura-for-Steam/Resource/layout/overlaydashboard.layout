@@ -1,0 +1,52 @@
+"resource/layout/overlaydashboard.layout"
+{
+	styles {
+
+		overlaymain {
+			render_bg {
+				0="fill( x0, y0, x1, y1, Overlay.Background )"
+			}
+		}
+
+		topbar {
+			font-family=condensed
+			textcolor=White
+			font-size=120
+		}
+
+		clocksuffix {
+			font-family=condensed
+			textcolor=Air210
+			font-size=120
+		}
+
+		timeStrings {
+			//this is the session text
+		}
+
+		OverlayURLLabel {
+			textcolor=none
+			bgcolor=AL10
+		}
+
+		OverlayURLLabel:Hover {
+			textcolor=none
+		}
+
+		bottomfade {
+		}
+	}
+
+	layout {
+
+		region { name=bottom align=bottom height=240 width=max }
+
+		place { control=CloseButton align=right height=60 width=60 }
+		place { control=TaskbarPanel y=400 width=max height=50 }
+		place { control=clock,clocksuffix region=bottom align=top-center }
+
+		place { control=PowerMeterDim align=top-center y=40 height=0 }
+
+		place { control=BottomFadePanel,SessionText,TopFadePanel,gamename,HotkeyLabel,HotkeyExplain,TwoWeeksText,ForeverText height=0 width=0 }
+	}
+}

@@ -1,0 +1,11 @@
+Dark img on light bg:
+Primary 	175 175 175 255
+Primary hover 	150 150 150 255
+Primary select	125 125 125 255
+
+Disabled	200 200 200 255
+
+Light img on dark bg
+Primary 	255 255 255 255
+Primary hover 	230 230 230 255
+Primary select	205 205 205 255

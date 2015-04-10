@@ -1,0 +1,312 @@
+"" {
+
+	colors {
+
+	basefont		"Roboto"
+	condensed		"Roboto Condensed"
+	light				"Roboto Light"
+	light2			"MadokaRunes"
+
+	basefont		"Helvetica" [$OSX]
+
+	}
+
+	styles {
+
+	Label 	{ font-family=basefont font-size=16 textcolor=Text selectedtextcolor=Text }
+	Panel 	{ font-family=basefont font-size=16 textcolor=Text selectedtextcolor=Text }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	ListPanel 										{ font-family=basefont font-size=16 textcolor=Text selectedtextcolor=Text }
+	ListPanelColumnHeader 				{ font-family=basefont font-size=16 textcolor=White }
+	ListPanelColumnHeader:hover		{ textcolor=WhiteHover }
+	ListPanelSectionHeader 				{ font-family=basefont font-size=16 textcolor=Label }
+	SectionedListPanel 						{ font-family=basefont font-size=16 textcolor=Text selectedtextcolor=Text }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	RichText 								{ font-family=basefont font-size=16 textcolor=Text selectedtextcolor=White selectedbgcolor=Focus2 }
+	"RichText emphasis" 		{ font-style=italic }
+	"RichText url" 					{ font-style=underline }
+	"RichText url:hover" 		{ textcolor=TextHover }
+	"RichText bold"					{ font-weight=700 }
+
+	//"ChatListPanel RichText" { } //chat window font size
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	TextEntry 												{ font-family=basefont font-size=16 textcolor=Text selectedtextcolor=White selectedbgcolor=Focus2 shadowtextcolor=Text } // shadowtext is the cursor color
+	TextEntry:disabled 								{ textcolor=Light }
+	TextEntry:empty 									{ textcolor=LabelDisabled }
+	TextEntryURL 											{ textcolor=White font-weight=700 selectedtextcolor=White selectedbgcolor=Focus2 } // url strings such as htmlpopup (paypal window)
+	"CSettingsSubFriends TextEntry" 	{ font-family=condensed font-size=30 }
+	TextEntryLarge  									{ font-family=condensed font-size=30 } // password entry
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	MenuItem 									{ font-family=basefont font-size=16 textcolor=TextHover }
+	MenuItem:hover 						{ textcolor=TextActive }
+	MenuItem:disabled 				{ textcolor=Light }
+	MenuItem:disabled:hover 	{ textcolor=Light }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	Button 									{ font-family=basefont font-size=16 textcolor=Text }
+	Button:hover 						{ textcolor=TextHover }
+	Button:active 					{ textcolor=Dark }
+	Button:disabled 				{ textcolor=Light }
+	ToggleButton:selected 	{ textcolor=Dark }
+	ComboBox 								{ font-family=basefont font-size=16 textcolor=Text }
+	ComboBox:hover 					{ textcolor=TextHover }
+	CheckButton 						{ font-family=basefont font-size=16 textcolor=Text }
+	CheckButton:disabled 		{ textcolor=Light }
+	RadioButton 						{ font-family=basefont font-size=16 textcolor=Text }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	PageTab 								{ font-size=16 font-family=basefont textcolor=White }
+	PageTab:selected 				{ textcolor=WhiteHover }
+	PageTab:hover 					{ textcolor=WhiteHover }
+	PageTab:selected:hover 	{ textcolor=WhiteHover }
+	PageTab:focus 					{ textcolor=WhiteHover }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	"TooltipWindow Label" 	{ textcolor=Text }
+	tooltip_headline 				{ font-size=18 textcolor=Text font-weight=700 }
+	friends_offline 				{ textcolor=Friends.Offline } // used in friends tooltip and friends list for overriding regular styles with custom colors
+	friends_online 					{ textcolor=Friends.Online }
+	friends_ingame 					{ textcolor=Friends.InGame }
+	friends_ignored 				{ textcolor=Friends.Offline }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	Notification { font-family=basefont font-size=16 }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	URLLabel 							{ textcolor=Text font-style=underline }
+	URLLabel:Hover 				{ textcolor=TextHover }
+	URLLabelSimple 				{ textcolor=Text font-style=underline }
+	URLLabelSimple:Hover 	{ textcolor=TextHover }
+	URLBarSecure 					{ textcolor=html.secureurl }
+	URLBarBrokenSecure 		{ textcolor=html.insecureurl }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Grid
+
+	"GridItemChrome CUILaunchButton" 				{ font-family=condensed font-size=60 textcolor=White font-style=none }
+	"GridItemChrome CUILaunchButton:hover" 	{ textcolor=WhiteHover }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//List
+
+	"GameColumn_BigText" 					{ font-family=basefont font-size=16 font-weight=700 textcolor=Text }
+	GameItem_Uninstalled 					{ textcolor=Label selectedtextcolor=Label }
+	GameItem_Installed				 		{ textcolor=Dark selectedtextcolor=Dark }
+	GameItem_Shortcut 						{ textcolor=Dark selectedtextcolor=Dark }
+	GameItem_Mod 									{ textcolor=Dark selectedtextcolor=Dark }
+	GameItem_Updating 						{ textcolor=focus2 selectedtextcolor=focus2 }
+	GameItem_Decrypting 					{ textcolor=focus2 selectedtextcolor=focus2 }
+	GameItem_Syncing 							{ textcolor=focus2 selectedtextcolor=focus2 }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Details
+
+	headertextlarge 	{ font-family=light2 font-size=40 textcolor=white font-weight=300 }
+
+	//subheader labels
+	"CGamesPage_Details headertext" 				{ font-family=basefont font-size=16 textcolor=Air210 }
+	"CGamesPage_Details headertext-red" 		{ font-family=basefont font-size=16 textcolor=Air210 }
+	"CGamesPage_Details headertext-green" 	{ font-family=basefont font-size=16 textcolor=Air210 }
+	"CGamesPage_Details headertext-blue" 		{ font-family=basefont font-size=16 textcolor=Air210 }
+	valuetext 															{ font-size=16 textcolor=White }
+
+	"CGamesPage_Details DetailsLaunchButton"	{ font-family=condensed font-size=40 textcolor=white font-weight=700 font-style=uppercase }
+	"CGamesPage_Details DetailsInstallButton"	{ font-family=condensed font-size=40 textcolor=white font-weight=700 font-style=uppercase }
+	"CGamesPage_Details DetailsBuyButton"			{ font-family=condensed font-size=40 textcolor=white font-weight=700 font-style=uppercase }
+
+	//links
+	rightcolumnlink 				{ textcolor=White font-style=regular } //removes underline on links
+	rightcolumnlink:hover 	{ textcolor=WhiteHover }
+	rightcolumntag 					{ textcolor=White }
+
+	//section labels
+	gamedetails-headerlabel 				{ font-family=condensed font-size=40 textcolor=Details.FocusText }
+	gamedetails-headerlabel-red 		{ font-family=condensed font-size=40 textcolor=Details.FocusText }
+	gamedetails-headerlabel-green		{ font-family=condensed font-size=40 textcolor=Details.FocusText }
+	gamedetails-headerlabel-blue 		{ font-family=condensed font-size=40 textcolor=Details.FocusText }
+
+	//sections
+	bodycontent 							{ }
+	mostrecent_label 					{ font-family=basefont font-size=18 }
+	mostrecent_name 					{ font-family=basefont font-size=18 }
+	mostrecent_unlockedsofar 	{ }
+	workshop_description 			{ }
+	infolabel 								{ font-family=basefont font-size=18 }
+	everythinglabel 					{ font-family=basefont font-size=18 }
+
+	//news
+	title_label 								{ font-family=basefont font-size=18 font-weight=700 }
+	date_and_author 						{ textcolor=Label }
+	newsitem_body 							{ }
+	more_link 									{ }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Music
+
+	AlbumTitleStyle 				{ font-family=condensed font-size=60 textcolor=Dark }
+	ArtistStyle 						{ font-family=condensed font-size=40 textcolor=Details.FocusText }
+	PlaylistTitleStyle 			{ font-family=condensed font-size=40 textcolor=Details.FocusText }
+	TrackStyle 							{ font-family=basefont font-size=16 }
+	TracksInfoStyle 				{ textcolor=label font-style=uppercase }
+	TracksInfoLabelStyle		{ textcolor=label font-style=uppercase }
+	PositionLabelStyle 			{ textcolor=text }
+	TrackLabelStyle 				{ textcolor=text }
+	"CSteamRootDialog ActionButtonStyle" 						{ font-size=16 font-weight=700 }
+	"CSteamRootDialog AdditionalActionButtonStyle" 	{ font-size=16 }
+
+	"CMusicPlayerPanel StatusStyle"			{ font-family=condensed font-size=24 textcolor=White }
+	"CMusicPlayerPanel StatusStyleDim"	{ textcolor=Label }
+	"CMusicPlayerPanel InfoLabelStyle"	{ textcolor=Label }
+	"CMusicPlayerPanel TrackListStyle"	{ font-size=16 textcolor=Text }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Friends
+
+	namestyle 							{ }
+	nameInstanceStyle 			{ textcolor=Friends.Offline } //friend alias color
+	statusStyle 						{ }
+	controlPanelLinkStyle 	{ }
+	inviteLinkStyle 				{ textcolor=Light } //friend invitation accept/block/ignore links
+	inviteLinkStyle:hover	 	{ textcolor=LightHover }
+	"CFriendsDialog label" 	{ textcolor=Label }	// friends list offline/disconnected msg
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Chat
+
+	friends_chat_text 						{ textcolor=Chat.Friend }
+	friends_chat_text_self 				{ textcolor=Chat.Self }
+	friends_chat_history 					{ textcolor=Chat.History }
+	friends_chat_event 						{ }
+	friends_chat_bright_event 		{ font-weight=700 }
+	friends_chat_url 							{ font-style=underline }
+	friends_chat_name_ingame 			{ textcolor=Friends.InGameColor }
+	friends_chat_self 						{ }
+	friends_chat_name 						{ textcolor=Friends.OnlineColor }
+	friends_chat_accountid 				{ }
+	friends_chat_securitylink 		{ textcolor=Light font-style=underline }
+	EmoticonMenuItemStyle 				{ font-size=20 textcolor=Label }
+	EmoticonMenuItemStyle:hover 	{ textcolor=LabelHover }
+	"ToolWindow label" 						{ textcolor=Label } //"Last message received..." text
+
+	//Voice Chat, Game Invite, Trade Invite
+
+	"ToolWindow status_label" 		{ font-weight=700 font-style=uppercase textcolor=white }
+	ControlButton 								{ font-weight=700 font-style=uppercase textcolor=white }
+	Chat_MenuButton_withChrome 		{ font-weight=700 font-style=uppercase textcolor=white }
+	"CChatInfoBar Label" 					{ font-weight=700 font-style=uppercase textcolor=White }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Header
+
+	LibrarySearch 							{ font-family=condensed font-size=24 textcolor=White selectedbgcolor=Focus2 shadowtextcolor=White } // shadowtext is the cursor color
+	LibrarySearch:empty:hover 	{ textcolor=WhiteHover }
+	FriendsSearch 							{ font-family=condensed font-size=24 textcolor=White selectedbgcolor=Focus2 shadowtextcolor=White } // shadowtext is the cursor color
+	FriendsSearch:empty:hover 	{ textcolor=WhiteHover }
+
+	CUINavButton 						{ font-family=condensed font-size=24 textcolor=White }
+	CUINavButton:hover 			{ textcolor=WhiteHover }
+	CUINavButton:selected 	{ textcolor=WhiteHover }
+
+	inbox_button 						{ font-family=basefont font-size=18 textcolor=White }
+	inbox_button:hover 			{ textcolor=WhiteHover }
+	inbox_button:selected 	{ textcolor=WhiteHover }
+
+	AccountBalanceStyle		{ font-family=basefont font-size=18 textcolor=White font-style=none }
+	AccountBalanceStyle:hover		{ textcolor=WhiteHover }
+	NavLabel2							{ font-family=condensed font-size=24 textcolor=White } //small mode filter name
+	online_friends 				{ font-family=condensed font-size=24 textcolor=White }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Downloads
+
+	bigtext { }
+	bigtextlabel { }
+	bigtextHeader { }
+	bigTextNumbers { }
+	throttleLabel { }
+	throttleValue { }
+	GamesGridPlaceholder { }
+	"CSteamRootDialog SectionedListPanel label" { }
+	"CSteamRootDialog SectionedListPanel label2" { }
+	"CSteamRootDialog ModuleHeading" { font-family=condensed font-size=24 }
+	"CSteamRootDialog ModuleHeading2" { font-family=condensed font-size=24 }
+
+	StatusLabelDim { textcolor=label font-style=none }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Screenshots
+
+	LargeSelectionCount 	{ font-family=condensed font-size=60 textcolor=White }
+	NoSelectionTitle 			{ font-family=condensed font-size=24 }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Overlay
+
+	sidemenu 				{ font-family=condensed font-size=40 textcolor=Air210 font-style=uppercase } // web browser, settings, music buttons in overlaydesktop
+	taskbar 				{ font-family=condensed font-size=60 textcolor=Air210 font-style=uppercase } // in overlaytaskbar
+	sidemenu:hover 	{ textcolor=white }
+	taskbar:hover 	{ textcolor=white }
+
+	ViewersTextStyle																	{ font-family=basefont font-size=18 textcolor="144 153 161 255" font-style=regular }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	//Email Reminder Bar
+
+	"CSteamRootDialog soft" 		{ font-weight=700 font-style=uppercase textcolor=Air210 }
+	"CSteamRootDialog bright" 	{ font-weight=700 font-style=uppercase textcolor=White }
+
+	//-------------------------------------------------------------------------------------------------------------------------------//
+	//-------------------------------------------------------------------------------------------------------------------------------//
+
+	emptylisttext 	{ textcolor=none selectedtextcolor=none } //search results empty
+	support_alert 	{ font-family=basefont font-size=16 textcolor=White font-weight=700 }
+	TreeNodeText 		{ font-family=Arial font-size=13 textcolor=Text selectedtextcolor=White selectedbgcolor=Focus2 }
+
+	StatusLabel 				{ textcolor=Label }
+	StatusLabel:hover 	{ textcolor=LabelHover }
+	}
+}

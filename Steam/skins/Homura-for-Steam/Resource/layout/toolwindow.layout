@@ -1,0 +1,74 @@
+"resource/layout/toolwindow.layout"
+{
+	styles {
+
+		PageTab {
+			minimum-height=30
+			padding-bottom=1
+		}
+
+		MenuButton {
+			minimum-height=30
+			minimum-width=16
+			render {
+				0="fill( x0, y0, x1, y1, Focus )"
+				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light )"
+			}
+		}
+
+		MenuButton:hover {
+			render {
+				0="fill( x0, y0, x1, y1, Focus )"
+				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light_hover )"
+			}
+		}
+
+		MenuButton:selected {
+			render {
+				0="fill( x0, y0, x1, y1, Focus )"
+				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light_hover )"
+			}
+		}
+
+		TabMenuButtonFlash {
+			bgcolor=none
+			render {
+				0="fill( x0, y0, x1, y1, PropertySheet.FlashTabColor )"
+				1="image( x0 + 2, y0 + 7, x1, y1, graphics/buttons/caret_down_light_hover )"
+			}
+		}
+
+		TabMenuItemFlash {
+			textcolor=PropertySheet.FlashTabColor
+		}
+
+		TabPageCloseButton {
+			padding-right=23
+		}
+
+		//new tab button
+		Button {
+			textcolor=none //don't render "X" as text
+			render_bg {
+				//0="fill( x0 + 2, y0 + 5, x1 + 1, y1 + 4, A2.Bar )"
+				1="image( x0 + 5, y0 + 8, x1, y1, graphics/icons/new_tab )"
+			}
+		}
+
+		Button:hover {
+			render_bg {
+				1="image( x0 + 5, y0 + 8, x1, y1, graphics/icons/new_tab_hover )"
+			}
+		}
+	}
+
+	layout
+	{
+		place { control=frame_minimize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
+		place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		place { control="frame_maximize" height=0 width=0 margin-left=-9999 }
+
+		place { control="ToolWindowSheet" x=0 y=16 height=max width=max }
+	}
+}

@@ -1,0 +1,30 @@
+"resource/layout/gamespage_grid_chrome.layout"
+{
+	styles
+	{
+		GridItemChrome {
+			bgcolor=AD80
+		}
+
+		ChromeBorderItem { }
+
+		GridNavDivider { }
+
+		CUILaunchButton {
+			padding-left=30
+			padding-right=30
+			padding-bottom=6
+		}
+	}
+
+	layout
+	{
+		region { name="touchscreen" height=max x=0 y=0 align=top-center }
+		place { control="launch" region="touchscreen" height=max align=top-center }
+		place { control="chromeborder" width=max height=max }
+
+		//Hidden Items
+		region { name=hidden height=0 width=0 }
+		place { control="divider,details" region=hidden }
+	}
+}

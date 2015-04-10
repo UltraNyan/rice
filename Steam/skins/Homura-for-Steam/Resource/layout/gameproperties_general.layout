@@ -1,0 +1,26 @@
+"resource/layout/gameproperties_general.layout"
+{
+	styles
+	{
+		button {
+			minimum-height=24
+		}
+	}
+
+	layout
+	{
+		region { name=main margin=20 }
+		place { controls="HomepageLabelName,DeveloperLabelName,ManualLabelName" region=main spacing=16 y=0 dir=down }
+		place { controls="HomepageLabel,DeveloperLabel,ManualLabel,NoManualLabel" region=main spacing=16 y=0 x=100 dir=down }
+		//place { controls="HomepageLabelName,HomepageLabel" region=main spacing=16 y=0 }
+		//place { controls="DeveloperLabelName,DeveloperLabel" region=main spacing=16 y=30 }
+		//place { controls="ManualLabelName,ManualLabel,NoManualLabel" region=main spacing=16 y=60 }
+
+		place {controls=ExternalSignupLabel,ExternalSignupButton x=260 margin-top=34 dir=down margin-left=20 width=260 height=24 spacing=0 region=main }
+		
+		place {control=Divider1 start=ManualLabelName dir=down margin-top=20 region=main width=max }
+		
+		place {controls=EnableOverlayCheck start=Divider1 dir=down margin-top=20 spacing=0 width=max region=main }
+		place {controls=LaunchOptionsButton,CreateDesktopShortcutButton start=EnableOverlayCheck dir=down margin-top=15 spacing=10 width=240 height=24 region=main }
+	}
+}

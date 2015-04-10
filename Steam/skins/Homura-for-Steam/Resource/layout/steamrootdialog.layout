@@ -1,0 +1,132 @@
+"resource/layout/steamrootdialog.layout"
+{
+	styles {
+
+		RootMenu {
+			bgcolor=none
+		}
+
+		ClientTitle {
+			textcolor=none
+		}
+
+		ClientTitle:FrameFocus {
+			textcolor=none
+		}
+
+		view_friends 				{ textcolor=none }
+		view_friends:hover 	{ textcolor=none }
+
+		support_alert {
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			bgcolor=support_flag_red
+			render { }
+			render_bg { }
+		}
+
+		inbox_button {
+			padding-left=16
+			render_bg { }
+		}
+
+		inbox_button:hover {
+			render_bg { }
+		}
+
+		inbox_button:selected {
+			render_bg { }
+		}
+
+		inbox_button_active {
+			render_bg {
+				1="image( x0 - 4, y0 + 4, x1, y1, graphics/icons/inbox_active )"
+			}
+		}
+
+		inbox_button_active:hover {
+			render_bg {
+				1="image( x0 - 4, y0 + 4, x1, y1, graphics/icons/inbox_active_hover )"
+			}
+		}
+
+		inbox_button_active:selected {
+			render_bg {
+				1="image( x0 - 4, y0 + 4, x1, y1, graphics/icons/inbox_active_hover )"
+			}
+		}
+
+		parental_lock_button {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/unlock)"
+			}
+		}
+
+		parental_lock_button:hover {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/unlock_hover)"
+			}
+		}
+
+		parental_lock_button:selected {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/lock)"
+			}
+		}
+
+		parental_lock_button:selected:hover {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/icons/lock_hover)"
+			}
+		}
+	}
+
+	colors {
+
+		support_flag_red "169 72 71 255"
+	}
+
+	layout
+	{
+		place { control=frame_minimize,frame_maximize,frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
+		place { control=frame_captiongrip margin=2 width=max height=50 }
+		place [!$OSX] { control=MenuBar align=top y=10 x=20 width=30 height=30 }
+
+		region { name=nav height=50 width=max y=9 }
+
+		place {
+			control=account_balance
+			region=nav align=right end-right=InboxButton y=1 height=0 margin-right=40 //height=30
+		}
+
+		place {
+			control=InboxButton
+			region=nav align=right y=1 height=30 width=44 margin-right=106
+		}
+		place {
+			control=online_friends
+			region=nav align=right height=0 margin-right=180 // height=30
+		}
+		place {
+			control=view_friends
+			region=nav align=right height=0 width=66 margin-right=180 // height=30
+		}
+		place {
+			control=ParentalLockButton
+			align=right height=30 width=30 align=right
+		}
+
+		place { control=UINavigatorPanel width=max height=max }
+
+		region { name=downloads align=bottom height=40 width=max }
+		place { control=UIStatusPanel region=downloads align=top-center height=30 width=181 }
+
+		place { control=SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance_seperator,account_URL,universe_label height=0 width=0 }
+	}
+}

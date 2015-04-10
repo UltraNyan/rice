@@ -1,0 +1,21 @@
+"resource/options/friends_hover.styles"
+{
+	styles
+	{
+		"CFriendsDialog CFriendPanel" { }
+
+		"CFriendsDialog CFriendPanel:selected" {
+			render_bg {
+				0="fill( x0 - 19, y0 + 1, x1, y1 - 1, focus )"
+			}
+		}
+
+		SelfPanel {
+			render_bg {
+				0="fill( x0 - 99, y0 - 3, x1 + 99, y1 + 3, A2.Ribbon )"
+			}
+		}
+
+		SelfPanel:hover { }
+	}
+}

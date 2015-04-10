@@ -1,0 +1,52 @@
+"resource/layout/setcustomimagedialog.layout"
+{
+	controls
+	{
+		SetCustomImageDialog { controlname="Frame" title="#SteamUI_SetCustomImage_Title" style="SetCustomImageDialog" }
+
+		ChooseAnImage { controlname="Label" labeltext="#SteamUI_SetCustomImage_ChooseImage" wrap=1 }
+		ImagePrescription { controlname="Label" labeltext="#SteamUI_SetCustomImage_ImagePrescription" wrap=1 }
+
+		ThisFile { controlname="Label" labeltext="#SteamUI_SetCustomImage_ThisFile" wrap=1 }
+		Filename { controlname="TextEntry" tabposition=1 unicode=1 }
+		Browse { controlname="Button" tabposition=2 command="Browse" labeltext="#SteamUI_SetCustomImage_Browse" }
+		TryAgain { controlname="Label" labeltext="#SteamUI_SetCustomImage_TryAgain" visible=false }
+
+		OK { controlname="Button" tabposition=3 command="DoSetCustomImage" labeltext="#SteamUI_SetCustomImage_SetImage" }
+		Cancel { controlname="Button" tabposition=4 command="Cancel" labeltext="#SteamUI_SetCustomImage_Cancel" }
+	}
+	
+	styles
+	{
+		SetCustomImageDialog
+		{
+			minimum-width = 400
+			minimum-height = 273
+		}
+		
+		Button
+		{     
+			minimum-width=92
+		}
+	}
+	
+	layout
+	{
+		region { name="top" width=max height=150 margin=10 margin-top=40 margin-right=25 margin-left=27 }
+		region { name="middle" width=max height=150 y=115 margin=10 margin-right=25 margin-left=26 }
+		region { name="bottom" width=max align=bottom height=40 margin-right=9 }
+
+		// top: prompts
+		place { control="ChooseAnImage" region="top" width=max }
+		place { control="ImagePrescription" start="ChooseAnImage" margin-top=18 dir=down region="top" width=max }
+
+		// middle: controls to select the image
+		place { region="middle" control="ThisFile" width=max margin-top=15 x=1 }
+		place { region="middle" control="Filename" start="ThisFile" dir=down width=max margin-top=5 x=-1 }
+		place { region="middle" control="Browse" start="Filename" dir=down margin-top=7 x=1 }
+		place { region="middle" control="TryAgain" start="Browse" dir=right x=1 }
+
+		// bottom: OK/cancel
+		place { control="OK,Cancel" region="bottom" align=right spacing=10 margin-top=4 }
+	}
+}

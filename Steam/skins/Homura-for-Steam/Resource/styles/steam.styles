@@ -1,0 +1,1155 @@
+steam.styles
+{
+
+	include "resource/styles/_colors.styles"
+	include "resource/styles/_fonts.styles"
+	include "resource/styles/_header.styles"
+
+	include "resource/tweaks/grid_fade.styles"
+	include "resource/tweaks/friends_nohover.styles"
+
+	colors
+	{
+		Frame.ClientInsetX       	 						"10"
+		Frame.ClientInsetY        						"35"
+		Frame.FocusTransitionEffectTime   		"0"		// time it takes for a window to fade in/out on focus/out of focus
+		Frame.TransitionEffectTime      			"0.25"		// time it takes for a window to fade in/out on open/close
+		Frame.OnDragAlphaDelayTime      			"0.15"		// time it takes after clicking the title bar of a window before the alpha multiplier kicks in
+		Frame.OnDragAlphaMultiplier     			"1.0"		// multiplier applied to alpha while dragging a frame
+		Frame.AutoSnapRange         					"6"
+		Frame.UsesAlphaBlending      	 				"1"
+		FrameSystemButton.Icon        				""
+		FrameSystemButton.DisabledIcon    		""
+
+		Notifications.PanelPosition     			"BottomRight"		// Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+		Notifications.PanelPosition     			"TopRight" [$OSX]		// the dock is on the bottom for OSX, so instead pop top right like other apps do
+		Notifications.SlideDirection    			"None"		// Can be "Vertical", "Horizontal", "None" and controls slide effect
+		Notifications.FadeInTime      				"0.45"		// Controls the time it takes to slide/fade into view
+		Notifications.FadeOutTime     				"0.25"		// Controls the time it takes to slide/fade out of view
+		Notifications.DisplayTime     				"3"		// Controls the length of time at steady state after fade in and before fade out
+		Notifications.StackSize       				"1"		// Controls how many panels we will stack before background queuing
+
+		ListPanel.PerPixelScrolling     			"1"
+		ListPanel.PostSectionLeading					"10"
+
+		Tooltip.Delay													"75"		// Default tooltip delay pops fast, but lets the mouse pass through without popping
+		Tooltip.Anchor												"Cursor"		// Anchor=Cursor makes it stick to initial pop location like windows implementation. Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside the parent panel (useful for icon sized items)
+
+		Menu.TextInset          							"6"
+
+		PropertySheet.TransitionEffectTime		"0"		// time to change from one tab to another
+		PropertySheet.TabGap        					"4"
+
+		RichText.InsetX         							"10"
+		RichText.InsetY         							"7"
+
+		ScrollBar.Wide          							"13"
+
+		SectionedListPanel.CollapserWidth   	"16"
+
+		HTML.SearchInsetY 										"5"
+		HTML.SearchInsetX 										"10"
+		HTML.SearchWide 											"348"
+		HTML.SearchTall 											"38"
+		HTML.SearchAnimationTime 							"0.25"
+
+		HTML.IMEInsetY 												"5"
+		HTML.IMEInsetX 												"10"
+		HTML.IMEWide 													"348"
+		HTML.IMETall 													"38"
+		HTML.IMEAnimationTime 								"0.25"
+
+		MessageBox.ButtonHeight								"24"
+	}
+
+	styles
+	{
+		"COverlaySettingsDialog Page" {
+			inset-left=10
+			inset-top=10
+		}
+
+		COverlaySettingsDialog {
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 50, Focus )"
+				1="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CServerBrowserDialog {
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 52, Focus )"
+				1="fill( x0, y0 + 60, x1, y0 + 80, Focus )" //column header
+				2="fill( x0, y1 - 60, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CPlayersDialog {
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 54, Focus )"
+				1="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CGamePropertiesDialog {
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 54, Focus )"
+				1="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CEditTagsDialog {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CEditFriendsGroupsDialog {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CSetCustomImageDialog {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CScreenshotManager {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CRegisterCDKeyWizard {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CAddShortcutDialog {
+			render_bg {
+				0="fill( x0, y1 - 68, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CBackupWizard {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CManageSecurityWizard {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CChangePasswordWizard {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CChangeContactEmailWizard {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CChooseBetaDialog {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CSetJumplistOptions {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CFriendNotificationOptionsDialog {
+			render_bg {
+				0="fill( x0, y1 - 60, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CInstallAppWizard {
+			render_bg {
+				0="fill( x0, y1 - 48, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		CContentManagmentDialog {
+			render_bg {
+				0="fill( x0, y1 - 56, x1, y1, A2.Ribbon )"
+			}
+		}
+
+		Button {
+			render_bg {
+				0="fill( x0, y0, x1, y1 , A2.Button )"
+				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+			}
+		}
+
+		Button:hover {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonHover )"
+				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+			}
+		}
+
+		Button:active {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
+				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+			}
+		}
+
+		Button:disabled	{
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonDisabled )"
+			}
+		}
+
+		ComboBox {
+			inset="3 0 0 0"
+			render {
+				0="image ( x1 - 17, y0 + 8, x1, y1, graphics/buttons/sm_down )"
+			}
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.Button )"
+				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+			}
+		}
+
+		ComboBox:hover {
+			render {
+				0="image ( x1 - 17, y0 + 8, x1, y1, graphics/buttons/sm_down_hover )"
+			}
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
+				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+			}
+		}
+
+		ComboBoxButton {
+			textcolor=none
+			render_bg { }
+		}
+
+		ToggleButton:selected {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
+				1="fill( x0, y1, x1, y1 + 1, A2.ButtonShadow )"
+			}
+		}
+
+		//"Hold+Resume" button in normal chat
+		Chat_MenuButton_withChrome 						{ render_bg { } }
+		Chat_MenuButton_withChrome:hover 			{ render_bg { } }
+		Chat_MenuButton_withChrome:active 		{ render_bg { } }
+		Chat_MenuButton_withChrome:disabled 	{ render_bg { } }
+
+		//"End voice chat" button in normal chat
+		controlbutton 					{ render_bg { } }
+		controlbutton:hover 		{ render_bg { } }
+		controlbutton:active 		{ render_bg { } }
+		controlbutton:disabled 	{ render_bg { } }
+
+		DetailsLaunchButton 					{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play )" } }
+		DetailsLaunchButton:hover 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play_hover )" } }
+		DetailsLaunchButton:active 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play_hover )" } }
+		DetailsLaunchButton:disabled 	{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/play )" } }
+
+		DetailsInstallButton 					{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install)" } }
+		DetailsInstallButton:hover 		{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+		DetailsInstallButton:active 	{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+
+		DetailsBuyButton 							{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy )" } }
+		DetailsBuyButton:hover 				{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy_hover )" } }
+		DetailsBuyButton:active 			{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/buy_hover )" } }
+
+		PauseButton 									{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause )" } }
+		PauseButton:hover 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause_hover )" } }
+		PauseButton:active 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/pause_hover )" } }
+
+		ResumeButton 									{ inset="19 0 0 0" render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install )" } }
+		ResumeButton:hover 						{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+		ResumeButton:active 					{ render { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/install_hover )" } }
+
+		SmRemoveButton				 				{ inset="30 0 0 0" render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/close )" } }
+		SmRemoveButton:hover 					{ render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/close_hover )" } }
+		SmRemoveButton:active 				{ render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/close_hover )" } }
+
+		topOfQueueButton 							{ inset="30 0 0 0" render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/topofqueue )" } }
+		topOfQueueButton:hover 				{ render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/topofqueue_hover )" } }
+		topOfQueueButton:active 			{ render_bg { } render { 1="image( x0 + 6, y0 + 4, x1, y1, graphics/icons/topofqueue_hover )" } }
+
+		downarrow 				{ image="graphics/buttons/sm_down" }
+		downarrow:hover 	{ image="graphics/buttons/sm_down_hover" }
+
+		uparrow 					{ image="graphics/buttons/sm_up" }
+		uparrow:hover 		{ image="graphics/buttons/sm_up_hover" }
+
+		rightarrow 				{ image="graphics/buttons/sm_right" }
+		rightarrow:hover 	{ image="graphics/buttons/sm_right_hover" }
+
+		leftarrow 				{ image="graphics/buttons/sm_left" }
+		leftarrow:hover 	{ image="graphics/buttons/sm_left_hover" }
+
+		CheckButton 										{ image=graphics/chkUnselStd }
+		CheckButton:hover 							{ image=graphics/chkUnselStd_hover }
+		CheckButton:selected 						{ image=graphics/chkSelStd }
+		CheckButton:selected:hover 			{ image=graphics/chkSelStd_hover }
+		CheckButton:disabled			 			{ image=graphics/chkUnselDis	}
+		CheckButton:selected:disabled 	{ image=graphics/chkSelDis }
+
+		CheckButtonList { }
+
+		ListPanelCheckBox {
+			inset-top=1
+			inset-left=8
+		}
+
+		"ListPanelColumnheader ListPanelCheckBox" {
+			inset-top=-2
+			inset-left=9
+		}
+
+		RadioButton 								{ image=graphics/RadUnselStd }
+		RadioButton:hover 					{ image=graphics/RadUnselStd_hover }
+		RadioButton:selected 				{ image=graphics/RadSelStd }
+		RadioButton:selected:hover 	{ image=graphics/RadSelStd_hover }
+
+		RadioButtonList { }
+
+		Divider {
+			bgcolor=none
+			render {
+				0="fill( x0, y0, x1, y0 + 1, A2.Divider )"
+			}
+		}
+
+		Frame {
+			bgcolor=A2.Background
+			render { }
+		}
+
+		Frame:FrameFocus {
+			bgcolor=A2.Background
+			render { }
+		}
+
+		FrameBRGripPanel {
+			//image=graphics/resizer
+		}
+
+		FrameBRGripPanel:hover {
+			//image=graphics/resizer_over
+		}
+
+		FrameMinimizeButton 				{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/controls/win_min_dark )" } }
+		FrameMinimizeButton:hover 	{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/controls/win_min_dark_hover )" } }
+		FrameMinimizeButton:active 	{ render_bg { 1="image( x0 - 3, y0 + 6, x1, y1, graphics/controls/win_min_dark_hover )" } }
+
+		FrameMaximizeButton 				{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_max_dark )" } }
+		FrameMaximizeButton:hover 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_max_dark_hover )" } }
+		FrameMaximizeButton:active 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_max_dark_hover )" } }
+
+		FrameRestoreButton 					{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_restore_dark )" } }
+		FrameRestoreButton:hover 		{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_restore_dark_hover )" } }
+		FrameRestoreButton:active 	{ render_bg { 1="image( x0, y0 + 3, x1, y1, graphics/controls/win_restore_dark_hover )" } }
+
+		FrameCloseButton 						{ render_bg { 0="image( x0 + 3, y0 + 6, x1, y1, graphics/controls/win_close_dark )" } }
+		FrameCloseButton:hover 			{ render_bg { 1="image( x0 + 3, y0 + 6, x1, y1, graphics/controls/win_close_dark_hover )" } }
+		FrameCloseButton:active 		{ render_bg { 1="image( x0 + 3, y0 + 6, x1, y1, graphics/controls/win_close_dark_hover )" } }
+
+
+		"CSteamRootDialog FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
+		"CSteamRootDialog FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+		"CSteamRootDialog FrameMinimizeButton:active" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+
+		"CSteamRootDialog FrameMaximizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_max_light )" } }
+		"CSteamRootDialog FrameMaximizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_max_light_hover )" } }
+		"CSteamRootDialog FrameMaximizeButton:active" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_max_light_hover )" } }
+
+		"CSteamRootDialog FrameRestoreButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_restore_light )" } }
+		"CSteamRootDialog FrameRestoreButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_restore_light_hover )" } }
+		"CSteamRootDialog FrameRestoreButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_restore_light_hover )" } }
+
+		"CSteamRootDialog FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
+		"CSteamRootDialog FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+		"CSteamRootDialog FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+
+
+		"ToolWindow FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
+		"ToolWindow FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+		"ToolWindow FrameMinimizeButton:active" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+
+		"ToolWindow FrameMaximizeButton" 					{ render_bg { } }
+		"ToolWindow FrameRestoreButton" 					{ render_bg { } }
+
+		"ToolWindow FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
+		"ToolWindow FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+		"ToolWindow FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+
+
+		"CFriendsDialog FrameMinimizeButton" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
+		"CFriendsDialog FrameMinimizeButton:hover" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+		"CFriendsDialog FrameMinimizeButton:active" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+
+		"CFriendsDialog FrameMaximizeButton" 					{ render_bg { } }
+		"CFriendsDialog FrameRestoreButton" 					{ render_bg { } }
+
+		"CFriendsDialog FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
+		"CFriendsDialog FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+		"CFriendsDialog FrameCloseButton:active" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+
+
+		"CGamesPage_Mini FrameMinimizeButton" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
+		"CGamesPage_Mini FrameMinimizeButton:hover" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+		"CGamesPage_Mini FrameMinimizeButton:active"	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+
+		"CGamesPage_Mini FrameMaximizeButton" 				{ render_bg { } }
+		"CGamesPage_Mini FrameRestoreButton" 					{ render_bg { } }
+
+		"CGamesPage_Mini FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
+		"CGamesPage_Mini FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+		"CGamesPage_Mini FrameCloseButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+
+
+		"HTMLPopup FrameMinimizeButton" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
+		"HTMLPopup FrameMinimizeButton:hover" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+		"HTMLPopup FrameMinimizeButton:active"	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+
+		"HTMLPopup FrameMaximizeButton" 				{ render_bg { } }
+		"HTMLPopup FrameRestoreButton" 					{ render_bg { } }
+
+		"HTMLPopup FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
+		"HTMLPopup FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+		"HTMLPopup FrameCloseButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+
+		"CMusicPlayerPanel FrameMinimizeButton" 				{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light )" } }
+		"CMusicPlayerPanel FrameMinimizeButton:hover" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+		"CMusicPlayerPanel FrameMinimizeButton:active" 	{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_min_light_hover )" } }
+
+		"CMusicPlayerPanel FrameMaximizeButton" 				{ render_bg { } }
+		"CMusicPlayerPanel FrameRestoreButton" 					{ render_bg { } }
+
+		"CMusicPlayerPanel FrameCloseButton" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light )" } }
+		"CMusicPlayerPanel FrameCloseButton:hover" 			{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+		"CMusicPlayerPanel FrameCloseButton:active" 		{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/controls/win_close_light_hover )" } }
+
+		"COverlayBroadcastChatDialog FrameMinimizeButton" 							{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameMinimizeButton:hover" 				{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameMinimizeButton:active" 				{ render_bg { } }
+
+		"COverlayBroadcastChatDialog FrameMaximizeButton" 							{ render_bg { } }
+		"COverlayBroadcastChatDialog FrameRestoreButton" 								{ render_bg { } }
+
+		"COverlayBroadcastChatDialog FrameCloseButton" 									{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_light )" } }
+		"COverlayBroadcastChatDialog FrameCloseButton:hover" 						{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_light_hover )" } }
+		"COverlayBroadcastChatDialog FrameCloseButton:active" 					{ render_bg { 1="image( x0 + 4, y0 + 4, x1, y1, graphics/material/controls/win_close_light_hover )" } }
+
+		ProgressBox {
+			minimum-height=128
+			//width is 384
+			render {
+				0="fill( x0, y0, x1, y1, A2.Background )"
+				2="image( x0, y0, x1, y1, graphics/icons/air_lg )"
+			}
+		}
+
+		"ProgressBox Button" 						{ textcolor=none render_bg { } }
+		"ProgressBox FrameCloseButton" 	{ render_bg { } }
+		"ProgressBox Label" 						{ textcolor=none }
+
+		FrameTitle {
+			textcolor=none
+		}
+
+		FrameTitle:framefocus {
+			textcolor=none
+		}
+
+		GraphPanel {
+			textcolor=focus // graph bars color
+			bgcolor=A2.Ribbon
+			inset="3 3 3 3"
+			render_bg { }
+		}
+
+		HTML {
+			bgcolor="A2.Ribbon"
+			inset="2 2 2 2"
+		}
+
+		ListPanel {
+			padding-left=8
+			selectedbgcolor=A2.Ribbon  // games list selected game bg color
+			shadowtextcolor="Light"	// the color of disabled line items
+		}
+
+		ListPanelInterior {
+		}
+
+		ListPanelColumnheader {
+			inset-top=1
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+			}
+		}
+
+		"CSteamRootDialog ListPanelColumnheader" {
+			padding-left=2
+		}
+
+		ListPanelColumnSelectButton {
+			image=graphics/icons/collapse
+		}
+
+		ListPanelColumnSelectButton:hover {
+			image=graphics/icons/collapse_hover
+		}
+
+		ListPanelColumnSelectButton:selected {
+			image=graphics/icons/collapse_hover
+		}
+
+		"CGamesListPanel ListPanelColumnSelectButton" {
+			image=graphics/none
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+			}
+			render {
+				0="image( x0 + 4, y0 + 2, x1, y1, graphics/icons/collapse )"
+			}
+		}
+
+		"CGamesListPanel ListPanelColumnSelectButton:hover" {
+			image=graphics/none
+			render {
+				0="image( x0 + 4, y0 + 2, x1, y1, graphics/icons/collapse_hover )"
+			}
+		}
+
+		"CGamesListPanel ListPanelColumnSelectButton:selected" {
+			image=graphics/none
+			render {
+				0="image( x0 + 4, y0 + 2, x1, y1, graphics/icons/collapse_hover )"
+			}
+		}
+
+		"CGamesPage_Details ListPanelColumnSelectButton" {
+			padding-left=1
+			padding-top=2
+			image=graphics/icons/collapse
+			render { }
+			render_bg {
+				0="fill( x0 + 7, y0, x1, y1 + 1, Scroll.Gutter )"
+			}
+		}
+
+		"CGamesPage_Details ListPanelColumnSelectButton:hover" {
+			image=graphics/icons/collapse
+			render { }
+		}
+
+		"CGamesPage_Details ListPanelColumnSelectButton:selected" {
+			image=graphics/icons/collapse
+			render { }
+		}
+
+		"CGamesPage_Mini ListPanelColumnSelectButton" {
+			padding-left=1
+			image=graphics/icons/collapse
+			render { }
+			render_bg {
+				0="fill( x0 + 7, y0 + 1, x1, y1 + 1, Scroll.Gutter )"
+			}
+		}
+
+		"CGamesPage_Mini ListPanelColumnSelectButton:hover" {
+			image=graphics/icons/collapse
+			render { }
+		}
+
+		"CGamesPage_Mini ListPanelColumnSelectButton:selected" {
+			image=graphics/icons/collapse
+			render { }
+		}
+
+		ListPanelDragger {
+			bgcolor=none
+			render { } //fill makes dragger visible
+		}
+
+		ListPanelSectionHeader {
+			padding-left=2
+			padding-top=4
+			padding-bottom=2
+		}
+
+		ListPanelSectionCollapser {
+			textcolor=none
+			padding-left=7
+			render_bg {
+				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_right )"
+			}
+		}
+
+		ListPanelSectionCollapser:hover {
+			render_bg {
+				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_right_hover )"
+			}
+		}
+
+		ListPanelSectionCollapser:selected {
+			padding-left=3
+			render_bg {
+				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_down )"
+			}
+		}
+
+		ListPanelSectionCollapser:selected:hover {
+			render_bg {
+				0="image( x0 + 9, y0 + 8, x1, y1, graphics/buttons/sm_down_hover )"
+			}
+		}
+
+		SectionedlistpanelCollapser {
+			textcolor=none
+			padding-left=7
+			render_bg {
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_right )"
+			}
+		}
+
+		SectionedListPanelCollapser:hover {
+			render_bg {
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_right_hover )"
+			}
+		}
+
+		SectionedListPanelCollapser:selected {
+			padding-left=3
+			render_bg {
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_down )"
+			}
+		}
+
+		SectionedListPanelCollapser:selected:hover {
+			render_bg {
+				0="image( x0 + 9, y0 + 5, x1, y1, graphics/buttons/sm_down_hover )"
+			}
+		}
+
+		MainNav { }
+
+		Menu {
+			bgcolor=A2.Menu
+			inset="0 5 0 5"
+			render {
+				1="fill( x0, y1 - 1, x1, y1, A2.MenuDivider )" //btm
+				2="gradient( x0, y0, x0 + 1, y1, A2.Menu, A2.MenuDivider )"
+				3="gradient( x1 - 1, y0, x1, y1, A2.Menu, A2.MenuDivider )"
+			}
+		}
+
+		SuperNavMenu {
+			bgcolor=A2.Menu
+			inset="0 5 0 5"
+			render {
+				1="fill( x0, y1 - 1, x1, y1, A2.MenuDivider )" //btm
+				2="gradient( x0, y0, x0 + 1, y1, A2.Menu, A2.MenuDivider )"
+				3="gradient( x1 - 1, y0, x1, y1, A2.Menu, A2.MenuDivider )"
+			}
+		}
+
+		SuperNavMenuItem { }
+		SuperNavMenuDivider { }
+
+		"ComboBox Menu" {
+			inset="0 0 0 0"
+			bgcolor=A2.Button
+			render {
+				1="fill( x0, y1 - 1, x1, y1, A2.MenuDivider )" //btm
+			}
+		}
+
+		MenuBar { }
+
+		"MenuBar MenuButton" {
+			textcolor=none
+			render_bg {
+				1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/hamburger )"
+			}
+		}
+
+		"MenuBar MenuButton:hover" {
+			textcolor=none
+			render_bg {
+				1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/hamburger_hover )"
+			}
+		}
+
+		"MenuBar MenuButton:selected" {
+			textcolor=none
+			render_bg {
+				1="image( x0 + 4, y0 + 4, x1, y1, graphics/icons/hamburger_hover )"
+			}
+		}
+
+		MenuButton { }
+
+		MenuItem {
+			padding-right=5
+			padding-left=5
+		}
+
+		MenuItem:selected {
+			bgcolor=A2.Ribbon
+		}
+
+		MenuItem:hover {
+			bgcolor=A2.Ribbon
+		}
+
+		MenuSeparator {
+			textcolor=none
+			render_bg {
+				0="fill( x0, y0 + 1, x1, y0 + 2, A2.MenuDivider )"
+			}
+		}
+
+		Notification {
+			bgcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.Background )"
+				1="fill( x0, y0 + 74, x1, y1, A2.MenuDivider )" //darkened region
+			}
+			render { }
+		}
+
+		Page { }
+
+		PageTab {
+			render_bg { }
+		}
+
+		PageTab:hover {
+			render_bg { }
+		}
+
+		PageTab:selected {
+			textcolor=Text
+			render_bg {
+				0="fill( x0, y0, x1 + 2, y1, A2.Background )"
+			}
+		}
+
+		PageTab:selected:hover {
+			textcolor=Text
+			render_bg {
+				0="fill( x0, y0, x1 + 2, y1, A2.Background )"
+			}
+		}
+
+		TabCloseButton {
+			textcolor=none //don't render "X" as text
+			render_bg {
+				0="image( x0 + 5, y0 + 7, x1, y1, graphics/buttons/tiny_x )"
+			}
+		}
+
+		TabCloseButton:hover {
+			render_bg {
+				1="image( x0 + 5, y0 + 7, x1, y1, graphics/buttons/tiny_x_hover )"
+			}
+		}
+
+		HotkeyEntryClearButton:hover {
+			render {
+				1="image( x0 + 3, y0, x1, y1, resource/icon_clear_field_hover )"
+			}
+		}
+
+		TextEntryClearButton:hover {
+			render {
+				1="image( x0 + 3, y0, x1, y1, resource/icon_clear_field_hover )"
+			}
+		}
+
+		CEmoticonButton {
+			padding-left=8
+			image="graphics/icons/emoticon"
+		}
+
+		CEmoticonButton:hover {
+			image="graphics/icons/emoticon_hover"
+		}
+
+		CEmoticonButton:selected {
+			image="graphics/icons/emoticon_hover"
+		}
+
+		EmoticonMenuItemStyle {
+			padding-left=0
+			padding-right=0
+			bgcolor=none
+		}
+
+		ProgressBar {
+			textcolor=focus //bar color
+			bgcolor=A2.Ribbon
+			render_bg { }
+		}
+
+		PropertyPage {
+			bgcolor=PropertySheetBG
+		}
+
+		RichTextInterior {
+			bgcolor=none
+		}
+
+		ScrollBar {
+			inset-top=0
+			inset-bottom=6
+			inset-left=0
+			inset-right=0
+		}
+
+		ScrollBar.Horizontal {
+			inset-top=0
+			inset-bottom=0
+			inset-left=0
+			inset-right=0
+		}
+
+		ScrollBarButton.up {
+			bgcolor=Scroll.Gutter
+			minimum-height=19
+			image=graphics/buttons/sm_up
+			render_bg { }
+		}
+
+		ScrollBarButton.up:hover {
+			bgcolor=Scroll.Gutter
+			image=graphics/buttons/sm_up_hover
+			render_bg { }
+		}
+
+		ScrollBarButton.down {
+			bgcolor=Scroll.Gutter
+			minimum-height=19
+			inset-top=3
+			image=graphics/buttons/sm_down
+			render_bg { }
+		}
+
+		ScrollBarButton.down:hover {
+			bgcolor=Scroll.Gutter
+			image=graphics/buttons/sm_down_hover
+			render_bg { }
+		}
+
+		ScrollBarButton.left {
+			bgcolor=Scroll.Gutter
+			minimum-width=19
+			image=graphics/buttons/sm_left
+			render_bg { }
+		}
+
+		ScrollBarButton.left:hover {
+			bgcolor=Scroll.Gutter
+			image=graphics/buttons/sm_left_hover
+			render_bg { }
+		}
+
+		ScrollBarButton.right {
+			bgcolor=Scroll.Gutter
+			minimum-width=19
+			image=graphics/buttons/sm_right
+			render_bg { }
+		}
+
+		ScrollBarButton.right:hover {
+			bgcolor=Scroll.Gutter
+			image=graphics/buttons/sm_right_hover
+			render_bg { }
+		}
+
+		ScrollBarHandle {
+			render_bg {
+				0="fill( x0 + 2, y0 + 7, x1 - 2, y1, Scroll.Std )"
+			}
+		}
+
+		ScrollBarHandle:hover {
+			render_bg {
+				0="fill( x0 + 2, y0 + 7, x1 - 2, y1, Scroll.Hover )"
+			}
+		}
+
+		ScrollBarHandle:active {
+			render_bg {
+				0="fill( x0 + 2, y0 + 7, x1 - 2, y1, Scroll.Hover )"
+			}
+		}
+
+		SliderHoriz {
+			render_bg {
+				0="fill( x0 + 5, y0 + 2, x1 + 1, y1 - 2, Scroll.Std )"
+			}
+		}
+
+		SliderHoriz:hover {
+			render_bg {
+				0="fill( x0 + 5, y0 + 2, x1 + 1, y1 - 2, Scroll.Hover )"
+			}
+		}
+
+		SliderHoriz:active {
+			render_bg {
+				0="fill( x0 + 5, y0 + 2, x1 + 1, y1 - 2, Scroll.Hover )"
+			}
+		}
+
+		ScrollBarSlider {
+			bgcolor=Scroll.Gutter
+			render_bg { }
+		}
+
+		ScrollBarSliderHoriz {
+			bgcolor=Scroll.Gutter
+			render_bg { }
+		}
+
+		"ListPanel scrollbar" {
+			inset-left=-1
+			inset-right=1
+		}
+
+		"CSteamRootDialog ListPanelInterior" {
+			render_bg {
+				0="fill( x0, y0 - 1, x1 + 13, y0, Focus )"
+			}
+		}
+
+		"CSteamRootDialog ListPanelInterior:scrollbar" {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, Scroll.Gutter )"
+				1="fill( x0, y0 - 1, x1 + 13, y0, Focus )"
+			}
+		}
+
+		"RichText scrollbar" {
+			inset-top=-2
+			inset-left=-1
+			inset-right=1
+		}
+
+		//RichText scrollbar inset-bottom=-21 in ChatRoomDlgFriend.res and ChatRoomDlg.res
+
+		RichTextInterior:scrollbar {
+			render_bg {
+				0="fill( x1, y0, x1 + 13, y1, Scroll.Gutter )"
+			}
+		}
+
+		"CFriendsDialog Scrollbar" {
+			inset-bottom=6
+			inset-top=2
+		}
+
+		SectionedListPanel {
+			bgcolor=none
+			selectedbgcolor=Focus
+			render_bg { }
+			inset="0 0 0 0"
+		}
+
+		Slider {
+			textcolor=A2.Ribbon //slider color
+		}
+
+		Slider:focus {
+		  textcolor=A2.Ribbon
+		}
+
+		TextEntry {
+			inset-left=3
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.Button )"
+			}
+		}
+
+		TextEntry:focus {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2.ButtonActive )"
+			}
+		}
+
+		TextEntryLarge {
+			//for password entry
+			inset-top=-2
+		}
+
+		TextEntryURL {
+			inset-left=0
+			render_bg {
+				0="fill( x0 - 6, y0 - 6, x1 + 30, y1 + 5, AL20 )"
+			}
+		}
+
+		// the background and frame of a tooltip
+		TooltipWindow {
+			bgcolor=A2.Menu
+		}
+
+		// body text inside a tooltip
+		"TooltipWindow Label" {
+			padding-left=4
+			padding-right=4
+		}
+
+		// headline text inside a tooltip
+		tooltip_headline {
+			padding-left=4
+			padding-top=-1
+			padding-bottom=1
+		}
+
+		TreeNode {
+			bgcolor=none
+			render_bg { }
+		}
+
+		TreeNodeImage {
+			bgcolor=none
+		}
+
+		TreeViewSubPanel {
+			bgcolor=none
+		}
+
+		TreeView {
+			render_bg { }
+		}
+
+		GameColumnHeaderFavorites {
+			textcolor=none
+			inset-top=0
+			inset-left=-1
+			image=graphics/icons/fav
+		}
+
+		CGamesListFavoritesToggle {
+			minimum-width=24
+			inset-left=4
+		}
+
+		CGamesListFavoritesToggle:hover {
+			image=graphics/icons/fav
+		}
+
+		CGamesListFavoritesToggle:selected {
+			image=graphics/icons/fav
+		}
+
+		CGamesListFavoritesToggle:selected:hover {
+			image=graphics/none
+		}
+
+		WrapPanel { }
+
+		BackButton 							{ render_bg { } image=graphics/buttons/web_back }
+		BackButton:hover 				{ render_bg { } image=graphics/buttons/web_back_hover }
+		BackButton:disabled 		{ render_bg { } image=graphics/none }
+
+		ForwardButton 					{ render_bg { } image=graphics/buttons/web_forward }
+		ForwardButton:hover 		{ render_bg { } image=graphics/buttons/web_forward_hover }
+		ForwardButton:disabled 	{ render_bg { } image=graphics/none }
+
+		ReloadButton 						{ render_bg { } image=graphics/buttons/web_reload }
+		ReloadButton:hover 			{ render_bg { } image=graphics/buttons/web_reload_hover }
+		ReloadButton:disabled 	{ render_bg { } image=graphics/none }
+
+		StopButton 							{ render_bg { } image=graphics/buttons/web_stop }
+		StopButton:hover 				{ render_bg { } image=graphics/buttons/web_stop_hover }
+		StopButton:disabled 		{ render_bg { } image=graphics/none }
+
+		BackButtonSm 							{ render_bg { } image=graphics/buttons/web_back }
+		BackButtonSm:hover 				{ render_bg { } image=graphics/buttons/web_back_hover }
+		BackButtonSm:disabled 		{ render_bg { } image=graphics/none }
+
+		ForwardButtonSm 					{ render_bg { } image=graphics/buttons/web_forward }
+		ForwardButtonSm:hover 		{ render_bg { } image=graphics/buttons/web_forward_hover }
+		ForwardButtonSm:disabled 	{ render_bg { } image=graphics/none }
+
+		LibrarySearch {
+			render_bg { }
+		}
+
+		LibrarySearch:focus {
+			render_bg {
+				0="fill( x0 - 6, y0 - 6, x1, y1 + 5, AL20 )"
+			}
+		}
+
+		LibrarySearch:empty:focus {
+			render_bg { }
+		}
+
+		LibrarySearchIcon {
+			image="graphics/icons/search"
+		}
+
+		FriendsSearch {
+			render_bg { }
+		}
+
+		FriendsSearch:focus {
+			render_bg {
+				0="fill( x0 - 6, y0 - 6, x1, y1 + 5, AL20 )"
+			}
+		}
+
+		FriendsSearch:empty:focus {
+			render_bg { }
+		}
+
+		FriendsSearchIcon {
+			image="graphics/icons/search"
+		}
+
+		rightcolumnheadertext {
+			textcolor=none
+			bgcolor=Focus3
+		}
+
+		rightcolumnheadertext-red {
+			textcolor=none
+			bgcolor=Focus3
+		}
+
+		rightcolumnheadertext-green {
+			textcolor=none
+			bgcolor=Focus3
+		}
+
+		rightcolumnheadertext-blue {
+			textcolor=none
+			bgcolor=Focus3
+		}
+
+		html-findbar {
+			bgcolor=A2.Background
+		}
+	}
+}

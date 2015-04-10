@@ -1,0 +1,51 @@
+"" {
+
+	styles
+	{
+		CSteamRootDialog {
+			bgcolor=A2.Background
+			render_bg {
+				0="fill(x0, y0, x1, y0 + 50, Focus )"
+			}
+		}
+
+		CGamesPage_Mini {
+			minimum-width=310
+			bgcolor=A2.Background
+			render_bg {
+				0="fill(x0, y0, x1, y0 + 50, Focus )"
+			}
+		}
+
+		FriendsPanel {
+			minimum-width=230
+			minimum-height=250
+			bgcolor=A2.Background
+			render_bg {
+				0="fill(x0, y0, x1, y0 + 77, Focus )"
+			}
+		}
+
+		ToolWindow {
+			bgcolor=A2.Background
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 50, focus )"
+			}
+		}
+
+		HTMLPopup {
+			bgcolor=A2.Background
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 50, focus )"
+			}
+		}
+
+		COverlayWebBrowser {
+			bgcolor=A2.Background
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 6, focus )"
+				2="fill( x0, y0 + 6, x1, y0 + 56, A2.Bar )"
+			}
+		}
+	}
+}

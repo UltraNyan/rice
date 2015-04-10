@@ -1,0 +1,17 @@
+gameoverlay.styles
+{
+	include "resource/styles/steam.styles"
+
+	colors {
+
+		Notifications.PanelPosition		"BottomRight"
+	}
+
+	styles {
+
+		//remove minimize button from chat window
+		"ToolWindow FrameMinimizeButton" {
+			render_bg { }
+		}
+	}
+}

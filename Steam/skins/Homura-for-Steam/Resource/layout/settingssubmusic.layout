@@ -1,0 +1,45 @@
+"resource/layout/settingssubmusic.layout"
+{
+	styles {
+
+		LibraryListStyle { }
+
+		HeaderText { }
+
+		VolumeSliderStyle	{ bgcolor=none font-family=basefont font-size=16 }
+	}
+
+	layout {
+
+		region { name="box" width=440 height=max y=0 x=0 }
+
+		place { control=LibraryHeader 						region=box dir=down }
+		place { control=LibraryList 							region=box dir=down width=max height=80 start=LibraryHeader margin-top=10 }
+
+		place { control=AddLibraryButton 					region=box dir=down width=130 start=LibraryList margin-top=10 }
+		place { control=RemoveLibraryButton 			region=box dir=right width=130 start=AddLibraryButton margin-left=10 }
+		place { control=StartCrawlingButton 			region=box dir=right width=130 start=RemoveLibraryButton margin-left=10 }
+
+		place { control=LibraryDivider 						region=box dir=down width=max start=AddLibraryButton margin-top=21 }
+
+		place { control=DatabaseInfoLabel 								region=box dir=down start=LibraryDivider margin-top=15 }
+		place { control=DatabaseCrawlAtStartup 						region=box dir=down start=DatabaseInfoLabel margin-top=10 }
+		place { control=DatabaseCrawlSteamInstallFolders 	region=box dir=down start=DatabaseCrawlAtStartup margin-top=-2 }
+		place { control=EnableMediaKeysCheckbox 					region=box dir=down start=DatabaseCrawlSteamInstallFolders margin-top=-2 }
+		place { control=ResetDatabaseButton 							region=box dir=down start=EnableMediaKeysCheckbox width=280 margin-top=10 }
+
+		place { control=DatabaseDivider 					region=box dir=down width=max start=ResetDatabaseButton margin-top=21 }
+
+		place { control=PauseMusicHeader 														region=box dir=down start=DatabaseDivider margin-top=15  }
+		place { control=PauseMusicWhenStartingApplicationCheckbox 	region=box dir=down start=PauseMusicHeader margin-top=5 }
+		place { control=PauseMusicWhenVoiceChatCheckbox 						region=box dir=down start=PauseMusicWhenStartingApplicationCheckbox margin-top=-2 }
+
+		place { control=NotificationHeader 													region=box dir=down start=PauseMusicWhenVoiceChatCheckbox margin-top=20 }
+		place { control=NotificationPlaylistNowPlayingCheckbox 			region=box dir=down start=NotificationHeader margin-top=5 }
+
+		place { control=LoggingHeader 															region=box dir=down x=220 start=DatabaseDivider margin-top=15 }
+		place { control=LoggingCrawlingCheckbox 										region=box dir=down start=LoggingHeader margin-top=5 }
+
+		place { control=DatabaseHeader,VolumeHeader,VolumeSlider,VolumeDivider height=0 width=0 }
+	}
+}

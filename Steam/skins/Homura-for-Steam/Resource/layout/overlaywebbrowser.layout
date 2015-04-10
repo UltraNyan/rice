@@ -1,0 +1,42 @@
+"steam/cached/overlaywebbrowser.layout"
+{
+	styles {
+
+		HTML {
+			inset="0 0 0 0"
+		}
+	}
+
+	layout
+	{
+		place { control=frame_close height=22 width=22 align=right margin-top=13 margin-right=19 spacing=0 }
+		place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		region { name=nav height=50 width=max y=16 x=17 }
+		region { name=body height=max width=max y=56 }
+
+		place {
+			control=BackButton,ForwardButton
+			region=nav height=30 width=28 spacing=10
+		}
+
+		place {
+			control=ReloadButton,StopButton
+			region=nav x=9 height=30 spacing=10 start=ForwardButton
+		}
+
+		place {
+			control=URLBar
+			region=nav y=4 x=126 height=22 width=max margin-right=56
+		}
+
+		place {
+			control=PageLoadThrobber
+			region=nav align=right height=30 width=30 margin-right=26
+		}
+
+		place { control=HTMLField region=body width=max height=max }
+
+		place { control="HomeButton,StatusText,URLStatusImage,EVCert" height=0 width=0 }
+	}
+}

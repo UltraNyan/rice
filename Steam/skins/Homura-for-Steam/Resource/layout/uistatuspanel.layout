@@ -1,0 +1,38 @@
+"resource/layout/uistatuspanel.layout"
+{
+	styles {
+
+		CUIStatusPanel {
+		}
+
+		SlimProgressBar {
+			textcolor=none
+			bgcolor=none
+			render_bg {
+				//use for background that only shows up during a current download
+				//0="fill( x0, y1 - 30, x1 - 3, y1, A2.StatusPanel )"
+			}
+		}
+
+		StatusLabel {
+		}
+
+		StatusLabelDim {
+			font-weight=700
+			font-style=uppercase
+			textcolor=white
+			render_bg {
+				0="fill( x0, y0, x1 - 3, y1, A2.StatusPanel )"
+			}
+		}
+	}
+
+	layout {
+
+	place { control=StatusProgressbar align=bottom width=max height=3 }
+	place { control=StatusComplete 	height=max y=0 align=top-center }
+	place { control=StatusPaused 		height=0 align=top-center }
+
+	place { control=StatusDownloading height=0 width=0 }
+	}
+}
