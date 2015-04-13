@@ -21,6 +21,7 @@ Semi dark setup for night
 Term colors included in README
 
 ### Edgy edgelord
+
 *Coming soon...*
 
 
@@ -28,10 +29,9 @@ Term colors included in README
 TODO
 
 ### Firefox CSS
+Firefox stylish CSS located in: [rice/Userstyles/Firefox](https://github.com/UltraNyan/rice/tree/master/Userstyles/Firefox)
 #### Tiny CSS by noha-ra light (saito-sensee edit)
-TODO
 ![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/firefox-light.png)
 
 #### Tiny CSS by noha-ra dark (saito-sensee edit)
-TODO
 ![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/firefox-dark.png)
