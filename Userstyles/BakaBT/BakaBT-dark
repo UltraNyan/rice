@@ -1,0 +1,169 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("bakabt.me") {
+/*General*/
+ body {
+    background: #2e2e2e;
+    color: #eee;
+}
+  
+.main {
+background:none;
+}  
+#head{
+        background-image: url("http://bakabt.me/images/banners/Bebop.jpg") !important;;
+}
+.comment_wrap {
+    background-color: #2e272c;
+}
+    
+
+#column_B div.stats {
+    background-color: #313131;
+}   
+    
+
+#column_B div.column_B_body {
+    background: none repeat scroll 0 0 #34333b;
+}
+    
+a {
+    color: #9a6d95;
+}
+
+input {
+    color: #d6c0e0;
+    padding: 0;
+}
+    
+div.quote, div.quote div.quote div.quote, div.quote div.quote div.quote div.quote div.quote {
+    background: none repeat scroll 0 0 #4f4559;
+    border: 1px solid #785c9a;
+}
+   
+#upper_header {
+    background: linear-gradient(to bottom, #6f3162 0%, #683257 0%, #7f3057 50%, #660036 51%, #7b296f 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+} 
+    
+    
+#headbar {
+    background: linear-gradient(to bottom, #6f3162 0%, #683257 0%, #7f3057 50%, #660036 51%, #7b296f 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+    
+#searchform {
+    display: none;
+}
+#searchform input.search {
+    background-color: #1e1e1e;
+}
+    /*Browse page*/
+
+    div.torrents table tr.alt1 td {
+    border-right: none;
+}
+    
+.alt1 {
+    background-color: #3d3d3d;
+}
+  
+  .alt0 {
+    background-color: #454545;
+}
+  
+  #content {
+    background-color: #3d3d3d;
+}
+  div.torrents table a.title {
+    color: #b36fbd;
+    font-family: 'Open Sans';
+    font-size: 120%;
+    letter-spacing: 0;
+}
+  
+  div.torrents table {
+    color: #a2a292;
+}
+  
+  
+div.pager a.selected {
+    color: #919394;
+}
+  
+  
+div.searchcloud {
+    background-color: #484849;
+    border: 1px solid #5b666a;
+}
+  
+  div.searchcloud a {
+    color: #b3bbd9;
+}
+.tags a {
+    color: #b3bbd9;
+    font-family: 'Open Sans';
+    font-size: 85%;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+  
+    
+
+#browse fieldset {
+    background-color: #4e4b50;
+    border: 1px solid #6d6278;
+}
+    
+#browse fieldset input {
+    background-color: #636262;
+}
+    
+    
+div.suggestion {
+    background-color: #3e3745;
+    border: 1px solid #9979b7;
+}
+    
+    /* PAge*/
+#screenshots {
+    background: none repeat scroll 0 0 #303030;
+}
+  
+#tab_outer {
+    background: none repeat scroll 0 0 #303030;
+}  
+ #tab_content {
+    background: none repeat scroll 0 0 #3f3e45;   
+}  
+    
+    #tab_menu ul li a {
+    background: none repeat scroll 0 0 #464444;
+    color: #cfcfcf;
+} 
+    
+    
+div.quote div.quote, div.quote div.quote div.quote div.quote, div.quote div.quote div.quote div.quote div.quote div.quote {
+    background: none repeat scroll 0 0 #785c9a;;
+}
+  
+    
+    
+#related_torrents {
+    background-color: #4f3b50;
+}
+div.box_grey {
+background-color: #4f3b50;
+    border: 1px solid #726464;
+}
+    .comment_mod a {
+    background-color: #5c3565;
+}
+    
+.torrent_mod a {
+    background-color: #5c3565;
+}
+    
+    /*User page*/
+table.userstats td {
+    background-color: #3d343e;
+}
+}
