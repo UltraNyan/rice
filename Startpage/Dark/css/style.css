@@ -1,0 +1,126 @@
+
+html { 
+  background: url('../img/10.png') no-repeat center center fixed;
+  background
+   
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	/*background: #33322F;*/
+	
+}
+
+body {
+	/*background: #294154;
+	background: url('../img/9.jpg');
+	background-position: center 20%;
+	*/
+	background: none;
+}
+
+h1 {
+	font-weight: 400;
+	text-align: center;
+	color: #DCDAD4;
+	font-size: 60px;
+	margin-bottom: 70px;
+}
+
+h2 {
+	color: rgba(244, 243, 236, 0.87);
+	font-size: 1.9em;
+	font-family: 'Ubuntu', 'Open Sans', sans-serif;
+}
+
+ul {
+	padding-left: 15px;
+}
+
+a {
+	color: #8e7b82;
+	font-size: 1.1em;
+	font-family: 'Open Sans',sans-serif;
+	transition: all 0.3s ease 0s;
+	background: #33322F;
+	border-radius: 3px;
+}
+
+a:hover {
+	background: rgba(113, 172, 204, 0.46);
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 0.77);
+	padding: 1px 5px;
+	text-decoration: none;
+}
+
+#main-container {
+	width: 70%;
+	margin: 23% auto 0;
+	min-width: 630px;
+}
+
+#name {
+
+}
+
+#main-search {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.23);
+	border: 2px solid rgba(120, 106, 122, 0.24);
+	width: 50%;
+	margin: 40px auto;
+	clear: both;
+	display: block;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.3em;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 0.25em;
+}
+
+#main-search:focus {
+	transition: all 0.5s ease 0s;
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+	text-shadow: 0 0 3px rgba(255, 255, 255, 0.36);
+}
+
+#now-playing {
+	background: rgba(0, 0, 0, 0.23);
+	border: 3px solid rgba(255, 255, 255, 0.17);
+	width: 350px;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;   
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.1em;
+	font-family: sans-serif;
+	padding: 0.6em;
+	transition: all 0.5s ease 0s;
+}
+
+#now-playing:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#now-playing h2 {
+	font-size: 1.3em;
+	margin: 0;
+}
+
+#now-playing h3 {
+	color: rgba(255, 255, 255, 0.5);
+	font-family: 'Open Sans';
+	font-size: 1em;
+	letter-spacing: 0.1px;
+	line-height: 1.2em;
+	margin-left: 1em;
+}
+
+.song {
+	color: rgba(255, 255, 255, 0.85);
+	font-weight: 600;
+}
+
+.artist {
+	color: rgba(255, 255, 255, 0.75);
+}
+

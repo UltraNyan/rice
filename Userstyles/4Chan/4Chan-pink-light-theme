@@ -5,18 +5,17 @@
 *{
 border:none!important;
 background:none!important;
-font-family:calibri!important;
+font-family:'Open Sans'!important;
 overflow-x: hidden;
 }
     
 input,textarea{background:white!important;}
 
 div.post.reply{
-/*width:38%!important;
-margin-left:25%!important;
-padding-top:5px!important;
-padding-left:5px!important;*/
-  margin-left:1em !important;
+
+
+padding-top:3px!important;
+padding-left:5px!important;
 }
 
 .reply:target, .reply.highlight{
@@ -33,14 +32,14 @@ display:none!important;
 }
     
 blockquote.postMessage{
-/*max-width:900px!important;*/
-/*text-align:justify!important;*/
+max-width:900px!important;
+text-align:justify!important;
 }
 
 
 html{
 background:#F7F7F7!important;
-background-image: url('example.com')!important;
+background-image: url('http://fc09.deviantart.net/fs70/f/2011/155/8/0/akemir_homura_render__by_xblueberryscarletx-d3i1ypw.png')!important;
 background-position: right bottom!important;
 background-attachment: fixed!important;
 background-repeat: no-repeat!important;
@@ -57,9 +56,10 @@ padding: 4px !important;
 
 .reply,.replyhl{
 background: #ffffff!important;
-margin: 15px 0px!important;
-border-radius: 5px!important;
+margin: 7px 5px!important;
+border-radius: 1px!important;
 box-shadow: 0 0 2px rgba(0,0,0,0.3)!important;
+  
 }
 
 blockquote,.quotejs,span.quote {
@@ -126,7 +126,7 @@ color:grey!important;
 }
 
 a.quotelink:link,a.quotelink:link:hover{
-color:#979797!important;
+color:#d6d6d6!important;
 }
 
 a.quotelink:visited,a.quotelink:visited:hover{
@@ -135,6 +135,18 @@ color:#dedede!important;
 
 span.posteruid, span.hand{
 color:#ccc!important;
+}
+  
+.postInfo > input {
+    display: none !important;
+}
+
+.postInfo:hover > input {
+    display: inline-block !important;
+}
+  
+span.postertrip {
+  color: #c29088 !important;
 }
       
 s{
@@ -175,10 +187,5 @@ padding-right:5px!important;
 padding-bottom:0!important;
 }
     
-  
-div.post div.file {
-    display: inline !important;;
-}
-  
 
 }
