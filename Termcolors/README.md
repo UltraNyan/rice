@@ -10,7 +10,7 @@ Slight changes to color tones
 ### Light
 Original: TODO
 Heavliy modifed to have more pastel look.
-Pic: TODO
+![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/term-light.png)
 
 
 ### Homura Swimsuit Light
