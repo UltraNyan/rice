@@ -11,3 +11,8 @@ Slight changes to color tones
 Original: TODO
 Heavliy modifed to have more pastel look.
 Pic: TODO
+
+
+### Homura Swimsuit Light
+Author: SaitoSensee
+![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/term-homura-swimsuit-lighter.png)
