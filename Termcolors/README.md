@@ -7,8 +7,8 @@ Original: http://dotshare.it/dots/634/
 Slight changes to color tones
 ![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/2015-04-09-065128_1920x1080_scrot.png)
 
-### Light
-Original: TODO
+### Ivory - Light
+Original: Baskerville - autor of bspwm (http://crunchbang.org/forums/viewtopic.php?pid=289240#p289240)
 Heavliy modifed to have more pastel look.
 ![alt tag](https://raw.githubusercontent.com/UltraNyan/rice/master/Screenshots/term-light.png)
 
